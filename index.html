@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Erin Free | Menopause Wellness Coaching</title>
+    <!-- Primary SEO meta -->
+    <meta
+      name="description"
+      content="Menopause wellness coaching for real women, real life, and real change. Based in Napa Valley, guided by Erin Free."
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="assets/images/favicon.svg"
+    />
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="Erin Free | Menopause Wellness Coaching" />
+    <meta
+      property="og:description"
+      content="Menopause wellness coaching for real women, real life, and real change. Based in Napa Valley, guided by Erin Free."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com" />
+    <meta
+      property="og:image"
+      content="https://example.com/assets/images/social-share-placeholder.jpg"
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Erin Free | Menopause Wellness Coaching" />
+    <meta
+      name="twitter:description"
+      content="Menopause wellness coaching for real women, real life, and real change. Based in Napa Valley, guided by Erin Free."
+    />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              blush: {
+                50: '#fdf5f7',
+                100: '#fbe8ec',
+                200: '#f7ccd7',
+                300: '#f1a5b8',
+              },
+              sand: {
+                50: '#f6f4f1',
+                100: '#e7e0d6',
+              },
+            },
+            fontFamily: {
+              sans: ['system-ui', 'ui-sans-serif', 'sans-serif'],
+            },
+            boxShadow: {
+              soft: '0 18px 45px rgba(15, 23, 42, 0.12)',
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .fade-section {
+        opacity: 0;
+        transform: translateY(24px);
+        transition: opacity 400ms ease-out, transform 400ms ease-out;
+      }
+      .fade-section.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      /* Hide scrollbars for swipeable carousels while preserving scroll behavior */
+      .scrollbar-hide {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-blush-50 text-slate-900 font-sans">
+    <!-- ===================== PAGE WRAPPER ===================== -->
+    <div class="flex min-h-screen flex-col">
+      <!-- ===================== SITE HEADER + NAV ===================== -->
+      <header class="border-b border-blush-200 bg-white/70 backdrop-blur">
+        <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:py-5">
+          <!-- Branding -->
+          <div class="flex items-center gap-3">
+            <div
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-blush-100 text-sm font-semibold text-rose-600"
+            >
+              EF
+            </div>
+            <div>
+              <p class="text-sm font-semibold tracking-wide text-slate-900">
+                Erin Free Coaching
+              </p>
+              <p class="text-xs text-slate-500">
+                Menopause Wellness • Napa Valley
+              </p>
+            </div>
+          </div>
+
+          <!-- Desktop CTA -->
+          <a
+            href="#contact"
+            class="hidden rounded-full bg-rose-500 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-white shadow-md shadow-rose-200/70 transition hover:bg-rose-600 hover:shadow-lg sm:inline-block"
+          >
+            Free Consultation
+          </a>
+        </div>
+
+        <!-- Primary Navigation Tabs -->
+        <nav class="border-t border-blush-100 bg-white/80">
+          <div class="mx-auto flex max-w-6xl items-center justify-between px-4">
+            <!-- Tabs -->
+            <div class="flex w-full items-center justify-between gap-2 py-3 text-xs sm:text-sm">
+              <div class="flex flex-wrap items-center gap-4 sm:gap-6">
+                <a href="#home" class="nav-link font-medium text-rose-600">
+                  Home
+                </a>
+                <a href="#services" class="nav-link text-slate-600 hover:text-rose-600">
+                  Services
+                </a>
+                <a href="#blog" class="nav-link text-slate-600 hover:text-rose-600">
+                  Blog
+                </a>
+                <a href="about.html" class="nav-link text-slate-600 hover:text-rose-600">
+                  About
+                </a>
+              </div>
+              <div class="flex items-center gap-4">
+                <a
+                  href="#login"
+                  class="nav-link text-slate-500 hover:text-rose-600"
+                >
+                  Login
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- ===================== MAIN CONTENT ===================== -->
+      <main class="flex-1">
+        <!-- ========== HERO SECTION (Headline + Intro CTA) ========== -->
+        <section
+          id="home"
+          class="fade-section border-b border-blush-100 bg-gradient-to-b from-blush-100/80 via-blush-50 to-white"
+        >
+          <div
+            class="mx-auto flex max-w-6xl flex-col gap-10 px-4 py-12 md:flex-row md:items-center md:py-16 lg:py-20"
+          >
+            <div class="flex-1 space-y-6">
+              <p
+                class="mx-auto inline-flex items-center justify-center rounded-full bg-white/70 px-3 py-1 text-center text-[11px] font-semibold uppercase tracking-[0.2em] text-rose-500 shadow-sm shadow-rose-100"
+              >
+                EMPOWERING YOU TO MOVE FREELY AND LIVE FULLY THROUGH MIDLIFE AND BEYOND
+              </p>
+              <h1
+                class="text-3xl font-semibold leading-tight text-slate-900 sm:text-4xl lg:text-[2.6rem]"
+              >
+                Menopause wellness coaching for real women, real life, and real change.
+              </h1>
+              <p class="max-w-xl text-sm leading-relaxed text-slate-600 sm:text-base">
+                Navigate perimenopause and menopause with a grounded, compassionate guide.
+                Together, we’ll create a plan that honors your body, your story, and your
+                season of life.
+              </p>
+              <div class="flex flex-wrap items-center gap-3 pt-2">
+                <a
+                  href="#cta"
+                  class="inline-flex items-center justify-center rounded-full bg-rose-500 px-6 py-2.5 text-sm font-semibold text-white shadow-soft transition hover:bg-rose-600 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-300"
+                >
+                  Learn More
+                </a>
+                <a
+                  href="#services"
+                  class="inline-flex items-center justify-center rounded-full border border-rose-200 bg-white/80 px-5 py-2.5 text-sm font-medium text-rose-700 shadow-sm transition hover:border-rose-300 hover:bg-rose-50"
+                >
+                  Explore Services
+                </a>
+              </div>
+              <div class="flex flex-wrap gap-6 pt-4 text-xs text-slate-500">
+                <div class="flex items-center gap-2">
+                  <span class="h-1.5 w-1.5 rounded-full bg-rose-400"></span>
+                  Coaching-first, judgment-free support
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="h-1.5 w-1.5 rounded-full bg-rose-400"></span>
+                  Rooted in real-life habits, not quick fixes
+                </div>
+              </div>
+            </div>
+
+            <!-- Hero Image Placeholder (replace with real image later) -->
+            <div class="flex-1">
+              <div
+                class="relative mx-auto max-w-md rounded-3xl bg-sand-50 p-5 shadow-soft sm:p-6"
+              >
+                <div
+                  class="absolute -left-4 -top-4 h-16 w-16 rounded-3xl border border-dashed border-rose-200"
+                ></div>
+                <div
+                  class="absolute -right-4 -bottom-4 h-20 w-20 rounded-full bg-rose-100/60"
+                ></div>
+                <div
+                  class="relative flex aspect-[4/5] items-center justify-center rounded-2xl border border-sand-100 bg-gradient-to-br from-white via-blush-50 to-rose-50/80"
+                >
+                  <div class="text-center">
+                    <div
+                      class="mx-auto mb-4 h-20 w-20 rounded-full border border-rose-100 bg-rose-50/70"
+                    ></div>
+                    <p class="text-xs font-semibold tracking-wide text-slate-500">
+                      Placeholder Image
+                    </p>
+                    <p class="mt-2 text-sm font-medium text-slate-700">
+                      Warm, calming photography of women in midlife
+                    </p>
+                    <p class="mt-1 text-xs text-slate-500">
+                      Swap this frame with your brand imagery.
+                    </p>
+                    <!-- When adding a real hero image here, use:
+                         <img src="assets/images/hero.jpg" alt="Women in midlife enjoying a calm Napa Valley setting" loading="lazy" class="..." />
+                    -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========== SECONDARY CTA SECTION (Free Consultation) ========== -->
+        <section
+          id="cta"
+          class="fade-section border-y border-blush-100 bg-rose-50/80"
+        >
+          <div class="mx-auto max-w-4xl px-4 py-10 sm:py-12">
+            <div
+              class="rounded-3xl bg-white/70 p-6 text-center shadow-soft shadow-rose-100/60 sm:p-8"
+            >
+              <h2 class="text-xl font-semibold text-slate-900 sm:text-2xl">
+                Ready to feel like yourself again?
+              </h2>
+              <p class="mt-3 text-sm leading-relaxed text-slate-600 sm:text-base">
+                Sign up for a free consultation to start your personalized menopause
+                wellness plan.
+              </p>
+              <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
+                <a
+                  href="#contact"
+                  class="inline-flex items-center justify-center rounded-full bg-rose-500 px-7 py-2.5 text-sm font-semibold text-white shadow-soft transition hover:bg-rose-600 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-300"
+                >
+                  Book Now
+                </a>
+                <p class="text-xs text-slate-500">
+                  No pressure, no obligation - just a conversation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========== ABOUT ERIN SECTION ========== -->
+        <section id="about" class="fade-section bg-white">
+          <div class="mx-auto max-w-5xl px-4 py-12 sm:py-16">
+            <div class="grid gap-10 md:grid-cols-[minmax(0,0.7fr)_minmax(0,1.3fr)] md:items-center">
+              <!-- Image placeholder -->
+              <div class="flex justify-center md:justify-start">
+                <div class="relative">
+                  <div
+                    class="h-40 w-40 rounded-full border border-sand-100 bg-gradient-to-br from-rose-50 via-white to-sand-50 shadow-soft sm:h-48 sm:w-48"
+                  ></div>
+                  <div
+                    class="absolute -bottom-4 left-1/2 w-40 -translate-x-1/2 rounded-full bg-white/80 px-4 py-2 text-center text-xs text-slate-500 shadow-md"
+                  >
+                    Circular headshot placeholder
+                  </div>
+                  <!-- When adding Erin's headshot, you can place an image here:
+                       <img src="assets/images/erin-headshot.jpg" alt="Erin Free, menopause wellness coach" loading="lazy" class="h-40 w-40 sm:h-48 sm:w-48 rounded-full object-cover" />
+                  -->
+                </div>
+              </div>
+
+              <!-- Card -->
+              <div>
+                <div
+                  class="rounded-3xl border border-sand-100 bg-sand-50/80 p-6 shadow-soft sm:p-8"
+                >
+                  <article class="space-y-4 text-sm leading-relaxed text-slate-700 sm:text-base">
+                    <p class="text-xs font-semibold uppercase tracking-[0.2em] text-rose-500">
+                      About Erin
+                    </p>
+                    <p>
+                      <strong>Meet Erin Free</strong><br />
+                      Based in Napa Valley, Erin brings a grounded, compassionate approach to helping
+                      women navigate midlife. As a mother, listener, and lifelong health advocate, her
+                      mission is to walk alongside each client with personalized care, practical tools,
+                      and deep respect for this powerful transition. Her programs are designed to
+                      support women in feeling whole, balanced, and confident in their bodies again,
+                      without the overwhelm or shame.
+                    </p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========== HOW WE CAN WORK TOGETHER (SERVICES GRID) ========== -->
+        <section
+          id="services"
+          class="fade-section border-y border-blush-100 bg-gradient-to-b from-white to-sand-50/80"
+        >
+          <div class="mx-auto max-w-6xl px-4 py-12 sm:py-16">
+            <div class="mx-auto max-w-3xl text-center">
+              <p class="text-xs font-semibold uppercase tracking-[0.25em] text-rose-500">
+                Services
+              </p>
+              <h2 class="mt-3 text-2xl font-semibold text-slate-900 sm:text-3xl">
+                How We Can Work Together
+              </h2>
+              <p class="mt-3 text-sm text-slate-600 sm:text-base">
+                Coaching designed for the whole of you - body, mind, and daily life. Every path is
+                personalized, but these are the pillars we draw from.
+              </p>
+            </div>
+
+            <div class="mt-10 grid gap-6 md:grid-cols-2">
+              <!-- Card 1 -->
+              <div
+                class="group flex flex-col justify-between rounded-2xl border border-rose-100 bg-white/80 p-6 shadow-sm transition hover:-translate-y-1 hover:border-rose-200 hover:shadow-soft"
+              >
+                <div>
+                  <h3 class="text-base font-semibold text-slate-900 sm:text-lg">
+                    Nutrition Support
+                  </h3>
+                  <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                    Personalized meal planning, education, and coaching to help you reduce
+                    inflammation, improve energy, and feel nourished-not restricted.
+                  </p>
+                </div>
+                <div class="mt-4 text-xs text-rose-500">
+                  Gentle guidance, no rigid rules.
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div
+                class="group flex flex-col justify-between rounded-2xl border border-rose-100 bg-white/80 p-6 shadow-sm transition hover:-translate-y-1 hover:border-rose-200 hover:shadow-soft"
+              >
+                <div>
+                  <h3 class="text-base font-semibold text-slate-900 sm:text-lg">
+                    Hormonal Balance Guidance
+                  </h3>
+                  <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                    We work together to understand your body’s hormonal shifts and explore
+                    lifestyle and medical options (without prescribing).
+                  </p>
+                </div>
+                <div class="mt-4 text-xs text-rose-500">
+                  Education and advocacy for your health journey.
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div
+                class="group flex flex-col justify-between rounded-2xl border border-rose-100 bg-white/80 p-6 shadow-sm transition hover:-translate-y-1 hover:border-rose-200 hover:shadow-soft"
+              >
+                <div>
+                  <h3 class="text-base font-semibold text-slate-900 sm:text-lg">
+                    Fitness &amp; Movement
+                  </h3>
+                  <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                    Gentle, adaptable routines that support bone density, strength, and stamina -
+                    tailored to your lifestyle and stage of life.
+                  </p>
+                </div>
+                <div class="mt-4 text-xs text-rose-500">
+                  Movement that honors your energy and season.
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div
+                class="group flex flex-col justify-between rounded-2xl border border-rose-100 bg-white/80 p-6 shadow-sm transition hover:-translate-y-1 hover:border-rose-200 hover:shadow-soft"
+              >
+                <div>
+                  <h3 class="text-base font-semibold text-slate-900 sm:text-lg">
+                    Whole-Person Wellness
+                  </h3>
+                  <p class="mt-2 text-sm leading-relaxed text-slate-600">
+                    A coaching-first approach that addresses stress, sleep, mood, and mindset -
+                    because menopause impacts every part of you.
+                  </p>
+                </div>
+                <div class="mt-4 text-xs text-rose-500">
+                  Space to be fully seen, heard, and supported.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========== BLOG PLACEHOLDER SECTION ========== -->
+        <section id="blog" class="fade-section bg-white">
+          <div class="mx-auto max-w-6xl px-4 py-12 sm:py-16">
+            <div class="grid gap-10 md:grid-cols-[minmax(0,1.3fr)_minmax(0,0.9fr)] md:items-center">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.25em] text-rose-500">
+                  Blog
+                </p>
+                <h2 class="mt-3 text-2xl font-semibold text-slate-900 sm:text-3xl">
+                  Gentle education for every stage of menopause
+                </h2>
+                <p class="mt-3 text-sm text-slate-600 sm:text-base">
+                  Use this space to share articles, resources, and reflections that help women feel
+                  informed — not overwhelmed. Think practical guides, Q&amp;As, and reassuring
+                  stories that normalize the menopause experience.
+                </p>
+              </div>
+              <div>
+                <div
+                  class="rounded-2xl border border-sand-100 bg-sand-50/70 p-5 text-sm text-slate-500"
+                >
+                  <p class="font-medium text-slate-700">
+                    Placeholder content
+                  </p>
+                  <p class="mt-2">
+                    Add your latest posts, link to an external blog, or integrate a CMS later. For
+                    now, this section holds space for educational content and updates from your
+                    practice.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========== TESTIMONIALS SECTION ========== -->
+        <section class="fade-section border-y border-blush-100 bg-rose-50/70">
+          <div class="mx-auto max-w-5xl px-4 py-12 sm:py-16">
+            <div class="text-center">
+              <p class="text-xs font-semibold uppercase tracking-[0.25em] text-rose-500">
+                Testimonials
+              </p>
+              <h2 class="mt-3 text-2xl font-semibold text-slate-900 sm:text-3xl">
+                Words from women Erin has supported
+              </h2>
+              <p class="mt-3 text-sm text-slate-600 sm:text-base">
+                Shared with permission. Names are first-name only for privacy and warmth.
+              </p>
+            </div>
+
+            <!-- Responsive testimonials:
+                 - Mobile: horizontally swipeable carousel
+                 - Desktop: 3–5 column grid, no horizontal scroll -->
+            <div class="mt-8 -mx-4 sm:mx-0">
+              <div
+                class="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory touch-pan-x scrollbar-hide sm:grid sm:grid-cols-3 lg:grid-cols-5 sm:gap-6 sm:overflow-visible sm:snap-none"
+              >
+                <!-- Quote 1 -->
+                <figure
+                  class="min-w-[85%] snap-center sm:min-w-0 sm:snap-none flex h-full flex-col justify-between rounded-2xl bg-white/80 p-5 text-center shadow-sm transition-transform duration-300 ease-out hover:-translate-y-1"
+                >
+                  <blockquote class="text-sm italic text-slate-700">
+                    “I finally feel like someone understands what I’ve been going through. Erin’s
+                    approach is so warm and real.”
+                  </blockquote>
+                  <figcaption class="mt-4 text-xs font-semibold text-slate-500">
+                    — Lisa
+                  </figcaption>
+                </figure>
+
+                <!-- Quote 2 -->
+                <figure
+                  class="min-w-[85%] snap-center sm:min-w-0 sm:snap-none flex h-full flex-col justify-between rounded-2xl bg-white/80 p-5 text-center shadow-sm transition-transform duration-300 ease-out hover:-translate-y-1"
+                >
+                  <blockquote class="text-sm italic text-slate-700">
+                    “The nutrition coaching changed my life. I’m not just eating better, I have energy
+                    again.”
+                  </blockquote>
+                  <figcaption class="mt-4 text-xs font-semibold text-slate-500">
+                    — Amanda
+                  </figcaption>
+                </figure>
+
+                <!-- Quote 3 -->
+                <figure
+                  class="min-w-[85%] snap-center sm:min-w-0 sm:snap-none flex h-full flex-col justify-between rounded-2xl bg-white/80 p-5 text-center shadow-sm transition-transform duration-300 ease-out hover:-translate-y-1"
+                >
+                  <blockquote class="text-sm italic text-slate-700">
+                    “I wish I had found this years ago. Erin helped me reconnect with myself.”
+                  </blockquote>
+                  <figcaption class="mt-4 text-xs font-semibold text-slate-500">
+                    — Michelle
+                  </figcaption>
+                </figure>
+
+                <!-- Quote 4 -->
+                <figure
+                  class="min-w-[85%] snap-center sm:min-w-0 sm:snap-none flex h-full flex-col justify-between rounded-2xl bg-white/80 p-5 text-center shadow-sm transition-transform duration-300 ease-out hover:-translate-y-1"
+                >
+                  <blockquote class="text-sm italic text-slate-700">
+                    “I came in exhausted, anxious, and unsure if what I was feeling was even normal.
+                    Erin gave me a plan that actually fits my life.”
+                  </blockquote>
+                  <figcaption class="mt-4 text-xs font-semibold text-slate-500">
+                    — Carmen
+                  </figcaption>
+                </figure>
+
+                <!-- Quote 5 -->
+                <figure
+                  class="min-w-[85%] snap-center sm:min-w-0 sm:snap-none flex h-full flex-col justify-between rounded-2xl bg-white/80 p-5 text-center shadow-sm transition-transform duration-300 ease-out hover:-translate-y-1"
+                >
+                  <blockquote class="text-sm italic text-slate-700">
+                    “After menopause, I thought I had to just live with the way I felt. Erin helped me
+                    see I could feel strong, clear, and like myself again.”
+                  </blockquote>
+                  <figcaption class="mt-4 text-xs font-semibold text-slate-500">
+                    — Tanisha
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========== MISSION SECTION ========== -->
+        <section class="fade-section bg-white">
+          <div class="mx-auto max-w-4xl px-4 py-12 sm:py-16">
+            <div
+              class="rounded-3xl border border-sand-100 bg-sand-50/80 p-6 shadow-soft sm:p-8"
+            >
+              <article class="space-y-4 text-sm leading-relaxed text-slate-700 sm:text-base">
+                <p class="text-xs font-semibold uppercase tracking-[0.25em] text-rose-500">
+                  Our Mission
+                </p>
+                <p>
+                  My mission is to help women feel strong, clear, and confident through menopause.
+                  Every client receives a personalized plan rooted in real life health coaching,
+                  covering everything from nutrition and movement to hormone education and mindset.
+                </p>
+                <p>
+                  Each experience is shaped by time, attention, and care. No rushed sessions or
+                  generic advice - just thoughtful guidance based on each client’s unique story,
+                  symptoms, and goals.
+                </p>
+                <p>
+                  This is care that meets women where they are, with real solutions, meaningful
+                  support, and lasting tools to feel like themselves again.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========== FAQ ACCORDION SECTION ========== -->
+        <section class="fade-section border-y border-blush-100 bg-rose-50/60">
+          <div class="mx-auto max-w-5xl px-4 py-12 sm:py-16">
+            <div class="text-center">
+              <p class="text-xs font-semibold uppercase tracking-[0.25em] text-rose-500">
+                FAQ
+              </p>
+              <h2 class="mt-3 text-2xl font-semibold text-slate-900 sm:text-3xl">
+                Questions women often ask
+              </h2>
+              <p class="mt-3 text-sm text-slate-600 sm:text-base">
+                If you don’t see your question here, you’re always welcome to ask during a free
+                consult.
+              </p>
+            </div>
+
+            <!-- 2-column FAQ grid: Coaching & Support / Nutrition & Wellness on top,
+                 Fitness & Movement / Hormone Health & Lifestyle below -->
+            <div class="mt-8 grid gap-8 md:grid-cols-2">
+              <!-- Column 1: Coaching & Support + Fitness & Movement -->
+              <div class="space-y-5">
+                <!-- Coaching & Support -->
+                <div class="space-y-3">
+                  <h3 class="text-sm font-semibold uppercase tracking-[0.15em] text-rose-500">
+                    Coaching &amp; Support
+                  </h3>
+
+                  <!-- Question: What does coaching with Erin include? -->
+                  <div class="overflow-hidden rounded-2xl border border-rose-100 bg-white/80">
+                    <button
+                      class="faq-toggle flex w-full items-center justify-between px-4 py-3 text-left text-sm font-semibold text-slate-800 sm:px-5 sm:py-4"
+                      type="button"
+                    >
+                      <span>What does coaching with Erin include?</span>
+                      <span
+                        class="faq-icon ml-4 inline-flex h-6 w-6 items-center justify-center rounded-full bg-rose-50 text-xs text-rose-500"
+                      >
+                        +
+                      </span>
+                    </button>
+                    <div
+                      class="faq-panel max-h-0 border-t border-rose-50 px-4 text-sm text-slate-600 transition-[max-height] duration-300 ease-out sm:px-5"
+                    >
+                      <div class="py-3 sm:py-4">
+                        You’ll receive a personalized plan built around your lifestyle, symptoms,
+                        and goals. Each session includes guided support around nutrition, movement,
+                        hormonal education, and whole-person wellness.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Question: Is this a good fit if I’m unsure where to start? -->
+                  <div class="overflow-hidden rounded-2xl border border-rose-100 bg-white/80">
+                    <button
+                      class="faq-toggle flex w-full items-center justify-between px-4 py-3 text-left text-sm font-semibold text-slate-800 sm:px-5 sm:py-4"
+                      type="button"
+                    >
+                      <span
+                        >Is this a good fit if I’m unsure where to
+                        start?</span
+                      >
+                      <span
+                        class="faq-icon ml-4 inline-flex h-6 w-6 items-center justify-center rounded-full bg-rose-50 text-xs text-rose-500"
+                      >
+                        +
+                      </span>
+                    </button>
+                    <div
+                      class="faq-panel max-h-0 border-t border-rose-50 px-4 text-sm text-slate-600 transition-[max-height] duration-300 ease-out sm:px-5"
+                    >
+                      <div class="py-3 sm:py-4">
+                        Yes. Erin specializes in helping women regain clarity and control during
+                        transitional stages. The process is structured but flexible and always paced
+                        to your comfort.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Question: How often do we meet and how long does coaching last? -->
+                  <div class="overflow-hidden rounded-2xl border border-rose-100 bg-white/80">
+                    <button
+                      class="faq-toggle flex w-full items-center justify-between px-4 py-3 text-left text-sm font-semibold text-slate-800 sm:px-5 sm:py-4"
+                      type="button"
+                    >
+                      <span>How often do we meet and how long does coaching last?</span>
+                      <span
+                        class="faq-icon ml-4 inline-flex h-6 w-6 items-center justify-center rounded-full bg-rose-50 text-xs text-rose-500"
+                      >
+                        +
+                      </span>
+                    </button>
+                    <div
+                      class="faq-panel max-h-0 border-t border-rose-50 px-4 text-sm text-slate-600 transition-[max-height] duration-300 ease-out sm:px-5"
+                    >
+                      <div class="py-3 sm:py-4">
+                        Session frequency depends on your needs, typically starting weekly or
+                        biweekly. Some clients work with Erin for a few months, others stay longer
+                        as they build lasting habits and confidence.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Question: Do I need a formal diagnosis to start coaching? -->
+                  <div class="overflow-hidden rounded-2xl border border-rose-100 bg-white/80">
+                    <button
+                      class="faq-toggle flex w-full items-center justify-between px-4 py-3 text-left text-sm font-semibold text-slate-800 sm:px-5 sm:py-4"
+                      type="button"
+                    >
+                      <span>Do I need a formal diagnosis to start coaching?</span>
+                      <span
+                        class="faq-icon ml-4 inline-flex h-6 w-6 items-center justify-center rounded-full bg-rose-50 text-xs text-rose-500"
+                      >
+                        +
+                      </span>
+                    </button>
+                    <div
+                      class="faq-panel max-h-0 border-t border-rose-50 px-4 text-sm text-slate-600 transition-[max-height] duration-300 ease-out sm:px-5"
+                    >
+                      <div class="py-3 sm:py-4">
+                        Not at all. Whether you’re navigating perimenopause, menopause, or just
+                        feeling off, Erin’s coaching is designed to meet you where you are with
+                        practical support that works now.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Fitness & Movement -->
+                <div class="space-y-3">
+                  <h3 class="text-sm font-semibold uppercase tracking-[0.15em] text-rose-500">
+                    Fitness &amp; Movement
+                  </h3>
+
+                  <!-- Question: What if I haven’t exercised in a long time? -->
+                  <div class="overflow-hidden rounded-2xl border border-rose-100 bg-white/80">
+                    <button
+                      class="faq-toggle flex w-full items-center justify-between px-4 py-3 text-left text-sm font-semibold text-slate-800 sm:px-5 sm:py-4"
+                      type="button"
+                    >
+                      <span>What if I haven’t exercised in a long time?</span>
+                      <span
+                        class="faq-icon ml-4 inline-flex h-6 w-6 items-center justify-center rounded-full bg-rose-50 text-xs text-rose-500"
+                      >
+                        +
+                      </span>
+                    </button>
+                    <div
+                      class="faq-panel max-h-0 border-t border-rose-50 px-4 text-sm text-slate-600 transition-[max-height] duration-300 ease-out sm:px-5"
+                    >
+                      <div class="py-3 sm:py-4">
+                        That’s totally fine. Erin creates movement plans that start at your current
+                        level, whether you're returning from injury, feeling low energy, or
+                        beginning for the first time.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Question: What types of fitness are included? -->
+                  <div class="overflow-hidden rounded-2xl border border-rose-100 bg-white/80">
+                    <button
+                      class="faq-toggle flex w-full items-center justify-between px-4 py-3 text-left text-sm font-semibold text-slate-800 sm:px-5 sm:py-4"
+                      type="button"
+                    >
+                      <span>What types of fitness are included?</span>
+                      <span
+                        class="faq-icon ml-4 inline-flex h-6 w-6 items-center justify-center rounded-full bg-rose-50 text-xs text-rose-500"
+                      >
+                        +
+                      </span>
+                    </button>
+                    <div
+                      class="faq-panel max-h-0 border-t border-rose-50 px-4 text-sm text-slate-600 transition-[max-height] duration-300 ease-out sm:px-5"
+                    >
+                      <div class="py-3 sm:py-4">
+                        Your plan may include strength, flexibility, mobility, and low-impact
+                        conditioning. Every routine supports bone health, joint stability, and
+                        hormonal changes.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Question: Can movement help with sleep, anxiety, or mood swings? -->
+                  <div class="overflow-hidden rounded-2xl border border-rose-100 bg-white/80">
+                    <button
+                      class="faq-toggle flex w-full items-center justify-between px-4 py-3 text-left text-sm font-semibold text-slate-800 sm:px-5 sm:py-4"
+                      type="button"
+                    >
+                      <span>Can movement help with sleep, anxiety, or mood swings?</span>
+                      <span
+                        class="faq-icon ml-4 inline-flex h-6 w-6 items-center justify-center rounded-full bg-rose-50 text-xs text-rose-500"
+                      >
+                        +
+                      </span>
+                    </button>
+                    <div
+                      class="faq-panel max-h-0 border-t border-rose-50 px-4 text-sm text-slate-600 transition-[max-height] duration-300 ease-out sm:px-5"
+                    >
+                      <div class="py-3 sm:py-4">
+                        Yes. Erin helps you use movement intentionally to support mood, energy, and
+                        nervous system regulation without exhausting your body.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Question: Will I need equipment or a gym? -->
+                  <div class="overflow-hidden rounded-2xl border border-rose-100 bg-white/80">
+                    <button
+                      class="faq-toggle flex w-full items-center justify-between px-4 py-3 text-left text-sm font-semibold text-slate-800 sm:px-5 sm:py-4"
+                      type="button"
+                    >
+                      <span>Will I need equipment or a gym?</span>
+                      <span
+                        class="faq-icon ml-4 inline-flex h-6 w-6 items-center justify-center rounded-full bg-rose-50 text-xs text-rose-500"
+                      >
+                        +
+                      </span>
+                    </button>
+                    <div
+                      class="faq-panel max-h-0 border-t border-rose-50 px-4 text-sm text-slate-600 transition-[max-height] duration-300 ease-out sm:px-5"
+                    >
+                      <div class="py-3 sm:py-4">
+                        Most plans can be done at home with little or no equipment. If you prefer
+                        to use a gym or have access to tools like weights or bands, that can be
+                        built into your routine.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Column 2: Nutrition & Wellness + Hormone Health & Lifestyle -->
+              <div class="space-y-5">
+                <!-- Nutrition & Wellness -->
+                <div class="space-y-3">
+                  <h3 class="text-sm font-semibold uppercase tracking-[0.15em] text-rose-500">
+                    Nutrition &amp; Wellness
+                  </h3>
+
+                  <!-- Question: What kind of nutrition coaching is offered? -->
+                  <div class="overflow-hidden rounded-2xl border border-rose-100 bg-white/80">
+                    <button
+                      class="faq-toggle flex w-full items-center justify-between px-4 py-3 text-left text-sm font-semibold text-slate-800 sm:px-5 sm:py-4"
+                      type="button"
+                    >
+                      <span>What kind of nutrition coaching is offered?</span>
+                      <span
+                        class="faq-icon ml-4 inline-flex h-6 w-6 items-center justify-center rounded-full bg-rose-50 text-xs text-rose-500"
+                      >
+                        +
+                      </span>
+                    </button>
+                    <div
+                      class="faq-panel max-h-0 border-t border-rose-50 px-4 text-sm text-slate-600 transition-[max-height] duration-300 ease-out sm:px-5"
+                    >
+                      <div class="py-3 sm:py-4">
+                        Plans are built around your specific health needs and food preferences. Erin
+                        helps you reduce inflammation, stabilize energy, and support hormonal
+                        balance with realistic and enjoyable strategies.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Question: Can we work on digestion, bloating, or gut health? -->
+                  <div class="overflow-hidden rounded-2xl border border-rose-100 bg-white/80">
+                    <button
+                      class="faq-toggle flex w-full items-center justify-between px-4 py-3 text-left text-sm font-semibold text-slate-800 sm:px-5 sm:py-4"
+                      type="button"
+                    >
+                      <span>Can we work on digestion, bloating, or gut health?</span>
+                      <span
+                        class="faq-icon ml-4 inline-flex h-6 w-6 items-center justify-center rounded-full bg-rose-50 text-xs text-rose-500"
+                      >
+                        +
+                      </span>
+                    </button>
+                    <div
+                      class="faq-panel max-h-0 border-t border-rose-50 px-4 text-sm text-slate-600 transition-[max-height] duration-300 ease-out sm:px-5"
+                    >
+                      <div class="py-3 sm:py-4">
+                        Yes. Many clients experience digestive changes during midlife. Erin helps
+                        you identify patterns and implement nutrition strategies that promote gut
+                        balance and comfort.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Question: What if I already follow a specific diet? -->
+                  <div class="overflow-hidden rounded-2xl border border-rose-100 bg-white/80">
+                    <button
+                      class="faq-toggle flex w-full items-center justify-between px-4 py-3 text-left text-sm font-semibold text-slate-800 sm:px-5 sm:py-4"
+                      type="button"
+                    >
+                      <span>What if I already follow a specific diet?</span>
+                      <span
+                        class="faq-icon ml-4 inline-flex h-6 w-6 items-center justify-center rounded-full bg-rose-50 text-xs text-rose-500"
+                      >
+                        +
+                      </span>
+                    </button>
+                    <div
+                      class="faq-panel max-h-0 border-t border-rose-50 px-4 text-sm text-slate-600 transition-[max-height] duration-300 ease-out sm:px-5"
+                    >
+                      <div class="py-3 sm:py-4">
+                        That’s welcomed. Erin builds on what’s already working and offers
+                        adjustments or additions based on your symptoms and goals.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Question: Do you give supplement recommendations? -->
+                  <div class="overflow-hidden rounded-2xl border border-rose-100 bg-white/80">
+                    <button
+                      class="faq-toggle flex w-full items-center justify-between px-4 py-3 text-left text-sm font-semibold text-slate-800 sm:px-5 sm:py-4"
+                      type="button"
+                    >
+                      <span>Do you give supplement recommendations?</span>
+                      <span
+                        class="faq-icon ml-4 inline-flex h-6 w-6 items-center justify-center rounded-full bg-rose-50 text-xs text-rose-500"
+                      >
+                        +
+                      </span>
+                    </button>
+                    <div
+                      class="faq-panel max-h-0 border-t border-rose-50 px-4 text-sm text-slate-600 transition-[max-height] duration-300 ease-out sm:px-5"
+                    >
+                      <div class="py-3 sm:py-4">
+                        Erin offers education around common supplements and helps you explore
+                        options that may support your plan. You’re encouraged to bring your
+                        provider’s guidance into the process.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Hormone Health & Lifestyle -->
+                <div class="space-y-3">
+                  <h3 class="text-sm font-semibold uppercase tracking-[0.15em] text-rose-500">
+                    Hormone Health &amp; Lifestyle
+                  </h3>
+
+                  <!-- Question: Can you help me understand how hormones affect my body? -->
+                  <div class="overflow-hidden rounded-2xl border border-rose-100 bg-white/80">
+                    <button
+                      class="faq-toggle flex w-full items-center justify-between px-4 py-3 text-left text-sm font-semibold text-slate-800 sm:px-5 sm:py-4"
+                      type="button"
+                    >
+                      <span>Can you help me understand how hormones affect my body?</span>
+                      <span
+                        class="faq-icon ml-4 inline-flex h-6 w-6 items-center justify-center rounded-full bg-rose-50 text-xs text-rose-500"
+                      >
+                        +
+                      </span>
+                    </button>
+                    <div
+                      class="faq-panel max-h-0 border-t border-rose-50 px-4 text-sm text-slate-600 transition-[max-height] duration-300 ease-out sm:px-5"
+                    >
+                      <div class="py-3 sm:py-4">
+                        Yes. Erin offers education around hormonal shifts and how they relate to
+                        changes like brain fog, mood fluctuations, energy dips, and sleep
+                        disruption.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Question: Can I still benefit if I’m on hormone therapy? -->
+                  <div class="overflow-hidden rounded-2xl border border-rose-100 bg-white/80">
+                    <button
+                      class="faq-toggle flex w-full items-center justify-between px-4 py-3 text-left text-sm font-semibold text-slate-800 sm:px-5 sm:py-4"
+                      type="button"
+                    >
+                      <span>Can I still benefit if I’m on hormone therapy?</span>
+                      <span
+                        class="faq-icon ml-4 inline-flex h-6 w-6 items-center justify-center rounded-full bg-rose-50 text-xs text-rose-500"
+                      >
+                        +
+                      </span>
+                    </button>
+                    <div
+                      class="faq-panel max-h-0 border-t border-rose-50 px-4 text-sm text-slate-600 transition-[max-height] duration-300 ease-out sm:px-5"
+                    >
+                      <div class="py-3 sm:py-4">
+                        Yes. Many clients are already using HRT or supplements. Erin’s approach
+                        works alongside your current plan to help you feel supported in daily life.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Question: Can we work on mindset and emotional health too? -->
+                  <div class="overflow-hidden rounded-2xl border border-rose-100 bg-white/80">
+                    <button
+                      class="faq-toggle flex w-full items-center justify-between px-4 py-3 text-left text-sm font-semibold text-slate-800 sm:px-5 sm:py-4"
+                      type="button"
+                    >
+                      <span>Can we work on mindset and emotional health too?</span>
+                      <span
+                        class="faq-icon ml-4 inline-flex h-6 w-6 items-center justify-center rounded-full bg-rose-50 text-xs text-rose-500"
+                      >
+                        +
+                      </span>
+                    </button>
+                    <div
+                      class="faq-panel max-h-0 border-t border-rose-50 px-4 text-sm text-slate-600 transition-[max-height] duration-300 ease-out sm:px-5"
+                    >
+                      <div class="py-3 sm:py-4">
+                        Absolutely. Coaching includes support for stress management, emotional
+                        resilience, body confidence, and mental clarity during all stages of
+                        menopause.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Question: What if I’m not sure what’s going on with my body? -->
+                  <div class="overflow-hidden rounded-2xl border border-rose-100 bg-white/80">
+                    <button
+                      class="faq-toggle flex w-full items-center justify-between px-4 py-3 text-left text-sm font-semibold text-slate-800 sm:px-5 sm:py-4"
+                      type="button"
+                    >
+                      <span>What if I’m not sure what’s going on with my body?</span>
+                      <span
+                        class="faq-icon ml-4 inline-flex h-6 w-6 items-center justify-center rounded-full bg-rose-50 text-xs text-rose-500"
+                      >
+                        +
+                      </span>
+                    </button>
+                    <div
+                      class="faq-panel max-h-0 border-t border-rose-50 px-4 text-sm text-slate-600 transition-[max-height] duration-300 ease-out sm:px-5"
+                    >
+                      <div class="py-3 sm:py-4">
+                        That’s completely okay. Erin helps you sort through symptoms, clarify what
+                        you’re feeling, and create a care path that fits your needs and season of
+                        life.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========== CONTACT / CONSULTATION & LOGIN PLACEHOLDER ========== -->
+        <section
+          id="contact"
+          class="fade-section bg-white"
+        >
+          <div class="mx-auto max-w-4xl px-4 py-12 sm:py-16">
+            <div class="grid gap-10 md:grid-cols-2">
+              <!-- Contact / Consult form placeholder -->
+              <div>
+                <h2 class="text-2xl font-semibold text-slate-900 sm:text-3xl">
+                  Book your free consultation
+                </h2>
+                <p class="mt-3 text-sm text-slate-600 sm:text-base">
+                  Share a few details and my team will reach out with next steps, including
+                  available times and what to expect.
+                </p>
+                <form class="mt-6 space-y-4">
+                  <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wide text-slate-600">
+                      Name
+                    </label>
+                    <input
+                      type="text"
+                      class="mt-1 w-full rounded-full border border-sand-100 bg-sand-50/60 px-4 py-2 text-sm text-slate-800 outline-none ring-rose-200/0 transition placeholder:text-slate-400 focus:border-rose-300 focus:ring-2 focus:ring-rose-200"
+                      placeholder="First and last name"
+                    />
+                  </div>
+                  <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wide text-slate-600">
+                      Email
+                    </label>
+                    <input
+                      type="email"
+                      class="mt-1 w-full rounded-full border border-sand-100 bg-sand-50/60 px-4 py-2 text-sm text-slate-800 outline-none ring-rose-200/0 transition placeholder:text-slate-400 focus:border-rose-300 focus:ring-2 focus:ring-rose-200"
+                      placeholder="you@example.com"
+                    />
+                  </div>
+                  <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wide text-slate-600">
+                      What would you like support with?
+                    </label>
+                    <textarea
+                      rows="3"
+                      class="mt-1 w-full rounded-2xl border border-sand-100 bg-sand-50/60 px-4 py-2 text-sm text-slate-800 outline-none ring-rose-200/0 transition placeholder:text-slate-400 focus:border-rose-300 focus:ring-2 focus:ring-rose-200"
+                      placeholder="Share a little about your symptoms, goals, or questions."
+                    ></textarea>
+                  </div>
+                  <button
+                    type="button"
+                    class="inline-flex w-full items-center justify-center rounded-full bg-rose-500 px-6 py-2.5 text-sm font-semibold text-white shadow-soft transition hover:bg-rose-600 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-300 md:w-auto"
+                  >
+                    Submit Inquiry
+                  </button>
+                </form>
+              </div>
+
+              <!-- Contact image placeholder (mirrors hero image treatment) -->
+              <div class="flex items-stretch">
+                <div
+                  class="relative mx-auto w-full max-w-sm rounded-3xl bg-sand-50 p-5 shadow-soft sm:p-6"
+                >
+                  <div
+                    class="absolute -left-4 -top-4 h-12 w-12 rounded-3xl border border-dashed border-rose-200 sm:h-16 sm:w-16"
+                  ></div>
+                  <div
+                    class="absolute -right-4 -bottom-4 h-16 w-16 rounded-full bg-rose-100/60"
+                  ></div>
+                  <div
+                    class="relative flex h-full min-h-[220px] items-center justify-center rounded-2xl border border-sand-100 bg-gradient-to-br from-white via-blush-50 to-rose-50/80"
+                  >
+                    <div class="text-center">
+                      <div
+                        class="mx-auto mb-4 h-20 w-20 rounded-full border border-rose-100 bg-rose-50/70"
+                      ></div>
+                      <p class="text-xs font-semibold tracking-wide text-slate-500">
+                        Placeholder Image
+                      </p>
+                      <p class="mt-2 text-sm font-medium text-slate-700">
+                        Imagery of calm, supportive conversation or coaching
+                      </p>
+                      <p class="mt-1 text-xs text-slate-500">
+                        Swap this frame with photography that reflects your consultation style.
+                      </p>
+                      <!-- When adding a real contact image here, you can use:
+                           <img src="assets/images/contact-placeholder.jpg" alt="Warm coaching conversation in a calm setting" loading="lazy" class="mx-auto h-full w-full max-h-64 rounded-2xl object-cover" />
+                      -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- ===================== FOOTER ===================== -->
+      <footer class="border-t border-blush-100 bg-rose-50/70">
+        <div class="mx-auto max-w-6xl px-4 py-6 text-xs text-slate-500">
+          <div class="flex flex-col items-center justify-between gap-3 sm:flex-row">
+            <p class="text-center sm:text-left">
+              © <span id="year"></span> Erin Free Menopause Coaching, Napa Valley. All rights
+              reserved.
+            </p>
+            <div class="flex flex-wrap items-center justify-center gap-4 sm:justify-end">
+              <a href="#" class="hover:text-rose-600">
+                Privacy Policy
+              </a>
+              <a href="mailto:hello@example.com" class="hover:text-rose-600">
+                hello@example.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Main JavaScript bundle -->
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

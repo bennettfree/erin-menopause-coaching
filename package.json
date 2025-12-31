@@ -1,0 +1,16 @@
+{
+  "name": "menopause-coaching",
+  "version": "1.0.0",
+  "description": "This project is a single-page marketing site for Erin Free's menopause coaching practice in Napa Valley.  \r It uses **standard HTML**, **Tailwind CSS via CDN**, and a small amount of **vanilla JavaScript** for interaction.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "serve -l 4173 ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "serve": "^14.2.5"
+  }
+}
