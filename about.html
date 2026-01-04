@@ -139,7 +139,7 @@
               </p>
             </div>
 
-            <!-- Image placeholder matching landing hero treatment -->
+            <!-- Hero image using nurtition.jpg inside decorative frame -->
             <div class="flex-1">
               <div
                 class="relative mx-auto max-w-md rounded-3xl bg-sand-50 p-5 shadow-soft sm:p-6"
@@ -151,22 +151,14 @@
                   class="absolute -right-4 -bottom-4 h-20 w-20 rounded-full bg-rose-100/60"
                 ></div>
                 <div
-                  class="relative flex aspect-[4/5] items-center justify-center rounded-2xl border border-sand-100 bg-gradient-to-br from-white via-blush-50 to-rose-50/80"
+                  class="relative rounded-2xl border border-sand-100 bg-gradient-to-br from-white via-blush-50 to-rose-50/80"
                 >
-                  <div class="text-center">
-                    <div
-                      class="mx-auto mb-4 h-20 w-20 rounded-full border border-rose-100 bg-rose-50/70"
-                    ></div>
-                    <p class="text-xs font-semibold tracking-wide text-slate-500">
-                      Placeholder Image
-                    </p>
-                    <p class="mt-2 text-sm font-medium text-slate-700">
-                      Warm, calming photography of Erin with clients
-                    </p>
-                    <p class="mt-1 text-xs text-slate-500">
-                      Swap this frame with your brand imagery.
-                    </p>
-                  </div>
+                  <img
+                    src="assets/images/nurtition.jpg"
+                    alt="Colorful, nourishing foods that support women’s wellness"
+                    loading="lazy"
+                    class="w-full rounded-2xl object-contain"
+                  />
                 </div>
               </div>
             </div>
@@ -236,44 +228,31 @@
         <!-- What You’ll Find Here -->
         <section class="fade-section bg-white px-6 py-16">
           <div class="mx-auto max-w-5xl text-base text-slate-700">
-            <div class="grid gap-8 md:grid-cols-2 md:items-center">
-              <div>
-                <h2 class="text-2xl font-semibold text-slate-900">
-                  What You’ll Find Here
-                </h2>
-                <p class="mt-4">
-                  Erin’s work is not about quick fixes or strict protocols. It is about listening
-                  closely, honoring your experience, and building a plan that fits and evolves with
-                  your life.
-                </p>
+            <div class="grid gap-8 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] md:items-center">
+              <div class="flex h-full flex-col justify-center">
+                <div>
+                  <h2 class="text-2xl font-semibold text-slate-900">
+                    What You’ll Find Here
+                  </h2>
+                  <p class="mt-4">
+                    Erin’s work is not about quick fixes or strict protocols. It is about listening
+                    closely, honoring your experience, and building a plan that fits and evolves with
+                    your life.
+                  </p>
+                </div>
               </div>
 
-              <!-- Image placeholder to the right of text on desktop, stacked on mobile -->
-              <div class="self-stretch">
+              <!-- Image larger but still beside text on desktop -->
+              <div class="self-start">
                 <div
-                  class="relative mx-auto max-w-xs rounded-3xl bg-sand-50 p-5 shadow-soft sm:max-w-sm sm:p-6 md:ml-auto"
+                  class="relative mx-auto max-w-xl overflow-hidden rounded-3xl bg-sand-50 shadow-soft md:ml-auto"
                 >
-                  <div
-                    class="absolute -left-4 -top-4 h-12 w-12 rounded-3xl border border-dashed border-rose-200 sm:h-14 sm:w-14"
-                  ></div>
-                  <div
-                    class="absolute -right-4 -bottom-4 h-16 w-16 rounded-full bg-rose-100/60"
-                  ></div>
-                  <div
-                    class="relative flex h-full min-h-[200px] items-center justify-center rounded-2xl border border-sand-100 bg-gradient-to-br from-white via-blush-50 to-rose-50/80"
-                  >
-                    <div class="text-center">
-                      <p class="text-xs font-semibold tracking-wide text-slate-500">
-                        Placeholder Image
-                      </p>
-                      <p class="mt-2 text-sm font-medium text-slate-700">
-                        Quiet, grounded moments from Erin’s coaching practice
-                      </p>
-                      <p class="mt-1 text-xs text-slate-500">
-                        Replace with photography that reflects your space and clients.
-                      </p>
-                    </div>
-                  </div>
+                  <img
+                    src="assets/images/prezi.jpg"
+                    alt="Calm, grounded moment from Erin’s coaching practice"
+                    loading="lazy"
+                    class="w-full rounded-3xl object-contain"
+                  />
                 </div>
               </div>
             </div>
@@ -386,14 +365,12 @@
               <!-- Image placeholder similar to mission/about sections -->
               <div class="flex justify-center md:justify-start">
                 <div class="relative">
-                  <div
-                    class="h-32 w-32 rounded-full border border-sand-100 bg-gradient-to-br from-rose-50 via-white to-sand-50 shadow-soft sm:h-40 sm:w-40"
-                  ></div>
-                  <div
-                    class="absolute -bottom-4 left-1/2 w-40 -translate-x-1/2 rounded-full bg-white/80 px-4 py-2 text-center text-xs text-slate-500 shadow-md"
-                  >
-                    Erin headshot placeholder
-                  </div>
+                  <img
+                    src="assets/images/profile.jpg"
+                    alt="Erin Free, menopause wellness coach"
+                    loading="lazy"
+                    class="h-32 w-32 rounded-full border border-sand-100 object-cover shadow-soft sm:h-40 sm:w-40"
+                  />
                 </div>
               </div>
 

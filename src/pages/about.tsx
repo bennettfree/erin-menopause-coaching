@@ -16,24 +16,18 @@ export default function AboutPage() {
             </p>
           </div>
 
-          {/* Image placeholder matching landing hero treatment */}
+          {/* Hero image using nurtition.jpg inside decorative frame */}
           <div className="flex-1">
             <div className="relative mx-auto max-w-md rounded-3xl bg-sand-50 p-5 shadow-soft sm:p-6">
               <div className="absolute -left-4 -top-4 h-16 w-16 rounded-3xl border border-dashed border-rose-200" />
               <div className="absolute -right-4 -bottom-4 h-20 w-20 rounded-full bg-rose-100/60" />
-              <div className="relative flex aspect-[4/5] items-center justify-center rounded-2xl border border-sand-100 bg-gradient-to-br from-white via-blush-50 to-rose-50/80">
-                <div className="text-center">
-                  <div className="mx-auto mb-4 h-20 w-20 rounded-full border border-rose-100 bg-rose-50/70" />
-                  <p className="text-xs font-semibold tracking-wide text-slate-500">
-                    Placeholder Image
-                  </p>
-                  <p className="mt-2 text-sm font-medium text-slate-700">
-                    Warm, calming photography of Erin with clients
-                  </p>
-                  <p className="mt-1 text-xs text-slate-500">
-                    Swap this frame with your brand imagery.
-                  </p>
-                </div>
+              <div className="relative rounded-2xl border border-sand-100 bg-gradient-to-br from-white via-blush-50 to-rose-50/80">
+                <img
+                  src="assets/images/nurtition.jpg"
+                  alt="Colorful, nourishing foods that support women’s wellness"
+                  loading="lazy"
+                  className="w-full rounded-2xl object-contain"
+                />
               </div>
             </div>
           </div>
@@ -91,36 +85,31 @@ export default function AboutPage() {
       {/* What You’ll Find Here */}
       <section className="fade-in bg-white px-6 py-16">
         <div className="mx-auto max-w-5xl text-base text-slate-700">
-          <div className="grid gap-8 md:grid-cols-2 md:items-center">
-            <div>
-              <h2 className="text-2xl font-semibold text-slate-900">
-                What You’ll Find Here
-              </h2>
-              <p className="mt-4">
-                Erin’s work is not about quick fixes or strict protocols. It is about listening
-                closely, honoring your experience, and building a plan that fits and evolves with
-                your life.
-              </p>
+          <div className="grid gap-8 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] md:items-center">
+            <div className="flex h-full flex-col justify-center">
+              <div>
+                <h2 className="text-2xl font-semibold text-slate-900">
+                  What You’ll Find Here
+                </h2>
+                <p className="mt-4">
+                  Erin’s work is not about quick fixes or strict protocols. It is about listening
+                  closely, honoring your experience, and building a plan that fits and evolves with
+                  your life.
+                </p>
+              </div>
             </div>
 
-            {/* Image placeholder to the right of text on desktop, stacked on mobile */}
-            <div className="self-stretch">
-              <div className="relative mx-auto max-w-xs rounded-3xl bg-sand-50 p-5 shadow-soft sm:max-w-sm sm:p-6 md:ml-auto">
-                <div className="absolute -left-4 -top-4 h-12 w-12 rounded-3xl border border-dashed border-rose-200 sm:h-14 sm:w-14" />
-                <div className="absolute -right-4 -bottom-4 h-16 w-16 rounded-full bg-rose-100/60" />
-                <div className="relative flex h-full min-h-[200px] items-center justify-center rounded-2xl border border-sand-100 bg-gradient-to-br from-white via-blush-50 to-rose-50/80">
-                  <div className="text-center">
-                    <p className="text-xs font-semibold tracking-wide text-slate-500">
-                      Placeholder Image
-                    </p>
-                    <p className="mt-2 text-sm font-medium text-slate-700">
-                      Quiet, grounded moments from Erin’s coaching practice
-                    </p>
-                    <p className="mt-1 text-xs text-slate-500">
-                      Replace with photography that reflects your space and clients.
-                    </p>
-                  </div>
-                </div>
+            {/* Image larger but still beside text on desktop, with subtle frame */}
+            <div className="self-start">
+              <div className="relative mx-auto max-w-xl overflow-hidden rounded-3xl bg-sand-50 shadow-soft md:ml-auto">
+                <div className="absolute -left-3 -top-3 h-10 w-10 rounded-3xl border border-dashed border-rose-200 sm:h-12 sm:w-12" />
+                <div className="absolute -right-3 -bottom-3 h-14 w-14 rounded-full bg-rose-100/60" />
+                <img
+                  src="assets/images/prezi.jpg"
+                  alt="Calm, grounded moment from Erin’s coaching practice"
+                  loading="lazy"
+                  className="w-full rounded-3xl object-contain"
+                />
               </div>
             </div>
           </div>
