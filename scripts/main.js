@@ -72,9 +72,9 @@ function setActiveLink() {
 
   navLinks.forEach((link) => {
     if (link.getAttribute('href') === '#' + currentId) {
-      link.classList.add('text-rose-600', 'font-medium');
+      link.classList.add('text-sky-700', 'font-medium');
     } else {
-      link.classList.remove('text-rose-600', 'font-medium');
+      link.classList.remove('text-sky-700', 'font-medium');
     }
   });
 }

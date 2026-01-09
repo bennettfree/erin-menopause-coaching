@@ -19,9 +19,9 @@ export default function AboutPage() {
           {/* Hero image using nurtition.jpg inside decorative frame */}
           <div className="flex-1">
             <div className="relative mx-auto max-w-md rounded-3xl bg-sand-50 p-5 shadow-soft sm:p-6">
-              <div className="absolute -left-4 -top-4 h-16 w-16 rounded-3xl border border-dashed border-rose-200" />
-              <div className="absolute -right-4 -bottom-4 h-20 w-20 rounded-full bg-rose-100/60" />
-              <div className="relative rounded-2xl border border-sand-100 bg-gradient-to-br from-white via-blush-50 to-rose-50/80">
+              <div className="absolute -left-4 -top-4 h-16 w-16 rounded-3xl border border-dashed border-sky-200" />
+              <div className="absolute -right-4 -bottom-4 h-20 w-20 rounded-full bg-sky-100/60" />
+              <div className="relative rounded-2xl border border-sand-100 bg-gradient-to-br from-white via-blush-50 to-sky-50/80">
                 <img
                   src="assets/images/nurtition.jpg"
                   alt="Colorful, nourishing foods that support women’s wellness"
@@ -40,9 +40,9 @@ export default function AboutPage() {
           {/* Image placeholder */}
           <div className="order-1 md:order-none md:flex-1">
             <div className="relative mx-auto max-w-md rounded-3xl bg-sand-50 p-5 shadow-soft sm:p-6">
-              <div className="absolute -left-4 -top-4 h-12 w-12 rounded-3xl border border-dashed border-rose-200 sm:h-16 sm:w-16" />
-              <div className="absolute -right-4 -bottom-4 h-16 w-16 rounded-full bg-rose-100/70" />
-              <div className="relative flex h-full min-h-[220px] items-center justify-center rounded-2xl border border-sand-100 bg-gradient-to-br from-white via-blush-50 to-rose-50/80">
+              <div className="absolute -left-4 -top-4 h-12 w-12 rounded-3xl border border-dashed border-sky-200 sm:h-16 sm:w-16" />
+              <div className="absolute -right-4 -bottom-4 h-16 w-16 rounded-full bg-sky-100/70" />
+              <div className="relative flex h-full min-h-[220px] items-center justify-center rounded-2xl border border-sand-100 bg-gradient-to-br from-white via-blush-50 to-sky-50/80">
                 <div className="text-center px-4">
                   <p className="text-xs font-semibold tracking-wide text-slate-500">
                     Coaching scene placeholder
@@ -57,7 +57,7 @@ export default function AboutPage() {
 
           {/* Text */}
           <div className="md:flex-1">
-            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-rose-500">
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-sky-600">
               Why This Work Matters
             </p>
             <h2 className="mt-3 text-3xl font-semibold text-slate-900">
@@ -102,8 +102,8 @@ export default function AboutPage() {
             {/* Image larger but still beside text on desktop, with subtle frame */}
             <div className="self-start">
               <div className="relative mx-auto max-w-xl overflow-hidden rounded-3xl bg-sand-50 shadow-soft md:ml-auto">
-                <div className="absolute -left-3 -top-3 h-10 w-10 rounded-3xl border border-dashed border-rose-200 sm:h-12 sm:w-12" />
-                <div className="absolute -right-3 -bottom-3 h-14 w-14 rounded-full bg-rose-100/60" />
+                <div className="absolute -left-3 -top-3 h-10 w-10 rounded-3xl border border-dashed border-sky-200 sm:h-12 sm:w-12" />
+                <div className="absolute -right-3 -bottom-3 h-14 w-14 rounded-full bg-sky-100/60" />
                 <img
                   src="assets/images/prezi.jpg"
                   alt="Calm, grounded moment from Erin’s coaching practice"
@@ -117,9 +117,9 @@ export default function AboutPage() {
       </section>
 
       {/* Full-width pull quote */}
-      <section className="fade-in bg-gradient-to-r from-rose-50 via-blush-100/70 to-rose-50 px-6 py-16">
+      <section className="fade-in bg-gradient-to-r from-sky-50 via-blush-100/70 to-sky-50 px-6 py-16">
         <div className="mx-auto max-w-3xl">
-          <blockquote className="italic text-lg text-slate-600 border-l-4 border-rose-300 pl-4 my-4">
+          <blockquote className="italic text-lg text-slate-600 border-l-4 border-sky-300 pl-4 my-4">
             "This is not just a career. It’s a calling."
           </blockquote>
         </div>
@@ -128,14 +128,14 @@ export default function AboutPage() {
       {/* Guiding Beliefs */}
       <section className="fade-in bg-white px-6 py-16">
         <div className="mx-auto max-w-5xl">
-          <div className="mb-3 text-center text-xs font-semibold uppercase tracking-[0.25em] text-rose-500">
+          <div className="mb-3 text-center text-xs font-semibold uppercase tracking-[0.25em] text-sky-600">
             Guiding Beliefs
           </div>
           <h2 className="mb-10 text-center text-3xl font-semibold text-slate-900">
             The principles behind every session
           </h2>
           <div className="grid gap-6 text-sm text-slate-700 md:grid-cols-2">
-            <div className="group rounded-2xl border border-rose-100 bg-white/80 p-5 shadow-sm transition hover:-translate-y-1 hover:border-rose-200 hover:shadow-soft">
+            <div className="group rounded-2xl border border-sky-100 bg-white/80 p-5 shadow-sm transition hover:-translate-y-1 hover:border-sky-200 hover:shadow-soft">
               <h3 className="font-semibold text-slate-900">
                 Care should feel personal
               </h3>
@@ -143,7 +143,7 @@ export default function AboutPage() {
                 Every woman’s journey is different. Support should reflect that.
               </p>
             </div>
-            <div className="group rounded-2xl border border-rose-100 bg-white/80 p-5 shadow-sm transition hover:-translate-y-1 hover:border-rose-200 hover:shadow-soft">
+            <div className="group rounded-2xl border border-sky-100 bg-white/80 p-5 shadow-sm transition hover:-translate-y-1 hover:border-sky-200 hover:shadow-soft">
               <h3 className="font-semibold text-slate-900">
                 Information builds confidence
               </h3>
@@ -151,7 +151,7 @@ export default function AboutPage() {
                 Understand what is happening in your body makes space for real change.
               </p>
             </div>
-            <div className="group rounded-2xl border border-rose-100 bg-white/80 p-5 shadow-sm transition hover:-translate-y-1 hover:border-rose-200 hover:shadow-soft">
+            <div className="group rounded-2xl border border-sky-100 bg-white/80 p-5 shadow-sm transition hover:-translate-y-1 hover:border-sky-200 hover:shadow-soft">
               <h3 className="font-semibold text-slate-900">
                 Consistency is better than intensity
               </h3>
@@ -159,7 +159,7 @@ export default function AboutPage() {
                 Small, steady steps add up to powerful results.
               </p>
             </div>
-            <div className="group rounded-2xl border border-rose-100 bg-white/80 p-5 shadow-sm transition hover:-translate-y-1 hover:border-rose-200 hover:shadow-soft">
+            <div className="group rounded-2xl border border-sky-100 bg-white/80 p-5 shadow-sm transition hover:-translate-y-1 hover:border-sky-200 hover:shadow-soft">
               <h3 className="font-semibold text-slate-900">
                 Your voice matters
               </h3>
@@ -174,7 +174,7 @@ export default function AboutPage() {
       {/* Experience & Training */}
       <section className="fade-in bg-white px-6 py-16">
         <div className="mx-auto max-w-4xl text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-rose-500">
+          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-sky-600">
             Experience &amp; Training
           </p>
           <h2 className="mt-3 text-2xl font-semibold text-slate-900">
@@ -198,7 +198,7 @@ export default function AboutPage() {
             {/* Image placeholder similar to mission/about sections */}
             <div className="flex justify-center md:justify-start">
               <div className="relative">
-                <div className="h-32 w-32 rounded-full border border-sand-100 bg-gradient-to-br from-rose-50 via-white to-sand-50 shadow-soft sm:h-40 sm:w-40" />
+                <div className="h-32 w-32 rounded-full border border-sand-100 bg-gradient-to-br from-sky-50 via-white to-sand-50 shadow-soft sm:h-40 sm:w-40" />
                 <div className="absolute -bottom-4 left-1/2 w-40 -translate-x-1/2 rounded-full bg-white/80 px-4 py-2 text-center text-xs text-slate-500 shadow-md">
                   Erin headshot placeholder
                 </div>
@@ -206,7 +206,7 @@ export default function AboutPage() {
             </div>
 
             <div className="space-y-4 text-base text-slate-700">
-              <p className="text-xs font-semibold uppercase tracking-[0.25em] text-rose-500">
+              <p className="text-xs font-semibold uppercase tracking-[0.25em] text-sky-600">
                 A Personal Note
               </p>
               <h2 className="text-2xl font-semibold text-slate-900">

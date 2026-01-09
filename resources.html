@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resources | Erin Free Menopause Coaching</title>
+    <meta
+      name="description"
+      content="Menopause wellness coaching for real women, real life, and real change. Based in Napa Valley, guided by Erin Free."
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="assets/images/favicon.svg"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              blush: {
+                50: '#f4f7fd',
+                100: '#e3eefc',
+                200: '#c3dcf8',
+                300: '#8bb7f0',
+              },
+              sand: {
+                50: '#f6f4f1',
+                100: '#e7e0d6',
+              },
+            },
+            fontFamily: {
+              sans: ['system-ui', 'ui-sans-serif', 'sans-serif'],
+            },
+            boxShadow: {
+              soft: '0 18px 45px rgba(15, 23, 42, 0.12)',
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .fade-section {
+        opacity: 0;
+        transform: translateY(24px);
+        transition: opacity 400ms ease-out, transform 400ms ease-out;
+      }
+      .fade-section.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-blush-50 text-slate-900 font-sans">
+    <div class="flex min-h-screen flex-col">
+      <!-- ===================== SHARED HEADER ===================== -->
+      <header class="border-b border-blush-200 bg-white/70 backdrop-blur">
+        <div
+          class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:py-5"
+        >
+          <div class="flex items-center gap-3">
+            <div
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-blush-100 text-sm font-semibold text-sky-700"
+            >
+              EF
+            </div>
+            <div>
+              <p class="text-sm font-semibold tracking-wide text-slate-900">
+                Erin Free Coaching
+              </p>
+              <p class="text-xs text-slate-500">
+                Menopause Wellness • Napa Valley
+              </p>
+            </div>
+          </div>
+
+          <a
+            href="index.html#contact"
+            class="hidden rounded-full bg-sky-600 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-white shadow-md transition hover:bg-sky-700 hover:shadow-lg sm:inline-block"
+          >
+            Free Consultation
+          </a>
+        </div>
+
+        <nav class="border-t border-blush-100 bg-white/80">
+          <div class="mx-auto flex max-w-6xl items-center justify-between px-4">
+            <div
+              class="flex w-full items-center justify-between gap-2 py-3 text-xs sm:text-sm"
+            >
+               <div class="flex flex-wrap items-center gap-4 sm:gap-6">
+                 <a
+                   href="index.html#home"
+                   class="nav-link text-slate-600 hover:text-sky-600"
+                 >
+                   Home
+                 </a>
+                 <a
+                   href="index.html#services"
+                   class="nav-link text-slate-600 hover:text-sky-600"
+                 >
+                   Services
+                 </a>
+                 <a
+                   href="about.html"
+                   class="nav-link text-slate-600 hover:text-sky-600"
+                 >
+                   About
+                 </a>
+                 <a
+                   href="index.html#blog"
+                   class="nav-link text-slate-600 hover:text-sky-600"
+                 >
+                   Blog
+                 </a>
+                 <a
+                   href="resources.html"
+                   class="nav-link font-medium text-sky-700"
+                 >
+                   Resources
+                 </a>
+               </div>
+              <div class="flex items-center gap-4">
+                <a
+                  href="index.html#login"
+                  class="nav-link text-slate-500 hover:text-sky-600"
+                >
+                  Login
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- ===================== MAIN CONTENT ===================== -->
+      <main class="flex-1 bg-blush-50">
+        <!-- Page header -->
+        <section
+          class="fade-section border-b border-blush-100 bg-gradient-to-b from-blush-100/80 via-blush-50 to-white"
+        >
+          <div
+            class="mx-auto flex max-w-6xl flex-col px-4 py-12 sm:py-16 md:py-20"
+          >
+            <div class="max-w-2xl space-y-4 text-center md:text-left">
+              <h1
+                class="text-3xl font-semibold leading-tight text-slate-900 sm:text-4xl md:text-[2.4rem]"
+              >
+                Trusted resources for this season of life
+              </h1>
+              <p class="text-sm leading-relaxed text-slate-600 sm:text-base">
+                A curated collection of books, websites, podcasts, and tools I often share with women seeking clarity, context, and steady information during midlife.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========== BOOKS SECTION ========== -->
+        <section class="fade-section bg-white px-4 py-12 sm:py-16">
+          <div class="mx-auto max-w-6xl space-y-8">
+            <div class="space-y-3 text-center md:text-left">
+              <p
+                class="text-xs font-semibold uppercase tracking-[0.25em] text-sky-600"
+              >
+                Books section
+              </p>
+              <p class="text-sm font-medium text-slate-900 sm:text-base">
+                Books I often recommend
+              </p>
+              <p class="text-sm text-slate-600 sm:text-base">
+                These titles offer clear, thoughtful perspectives on menopause, midlife health, and whole-person wellbeing. They are resources I frequently share with women who want steady information and a deeper understanding of what they are experiencing.
+              </p>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Book 1 -->
+                <article
+                  class="flex flex-col gap-4 rounded-3xl border border-sand-100 bg-white/80 p-5 shadow-soft sm:flex-row sm:items-start sm:p-6"
+                >
+                  <div
+                    class="flex w-20 flex-shrink-0 items-start justify-center overflow-hidden rounded-2xl border border-sand-100 bg-blush-50/80 shadow-sm sm:w-24"
+                  >
+                    <img
+                      src="https://m.media-amazon.com/images/I/91rj56ZHp-L._AC_UF1000,1000_QL80_.jpg"
+                      alt="Cover of The Menopause Guidebook"
+                      class="h-auto w-full object-contain"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="space-y-2 text-sm text-slate-700">
+                    <h2 class="text-base font-semibold text-slate-900">
+                      The Menopause Guidebook
+                    </h2>
+                    <p class="text-xs font-medium text-slate-500">
+                      The Menopause Society (formerly NAMS), nonprofit medical
+                      society
+                    </p>
+                    <p>
+                      I often recommend this to women who want clear, steady
+                      information without fear or hype. It helps you better
+                      understand what is happening in your body and feel more
+                      prepared for conversations with your healthcare provider.
+                    </p>
+                  </div>
+                </article>
+
+                <!-- Book 2 -->
+                <article
+                  class="flex flex-col gap-4 rounded-3xl border border-sand-100 bg-white/80 p-5 shadow-soft sm:flex-row sm:items-start sm:p-6"
+                >
+                  <div
+                    class="flex w-20 flex-shrink-0 items-start justify-center overflow-hidden rounded-2xl border border-sand-100 bg-blush-50/80 shadow-sm sm:w-24"
+                  >
+                    <img
+                      src="https://m.media-amazon.com/images/I/71JU+J8x24L._AC_UF1000,1000_QL80_.jpg"
+                      alt="Cover of The New Rules of Menopause"
+                      class="h-auto w-full object-contain"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="space-y-2 text-sm text-slate-700">
+                    <h2 class="text-base font-semibold text-slate-900">
+                      The New Rules of Menopause
+                    </h2>
+                    <p class="text-xs font-medium text-slate-500">
+                      Stephanie S. Faubion, MD, MBA, medical director of The
+                      Menopause Society
+                    </p>
+                    <p>
+                      I appreciate how practical and grounded this book feels.
+                      It offers education that respects individual experiences
+                      while helping women make sense of midlife changes.
+                    </p>
+                  </div>
+                </article>
+
+                <!-- Book 3 -->
+                <article
+                  class="flex flex-col gap-4 rounded-3xl border border-sand-100 bg-white/80 p-5 shadow-soft sm:flex-row sm:items-start sm:p-6"
+                >
+                  <div
+                    class="flex w-20 flex-shrink-0 items-start justify-center overflow-hidden rounded-2xl border border-sand-100 bg-blush-50/80 shadow-sm sm:w-24"
+                  >
+                    <img
+                      src="https://m.media-amazon.com/images/I/71GV8tFP8pL._AC_UF1000,1000_QL80_.jpg"
+                      alt="Cover of The Menopause Manifesto"
+                      class="h-auto w-full object-contain"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="space-y-2 text-sm text-slate-700">
+                    <h2 class="text-base font-semibold text-slate-900">
+                      The Menopause Manifesto
+                    </h2>
+                    <p class="text-xs font-medium text-slate-500">
+                      Jen Gunter, MD, OB GYN
+                    </p>
+                    <p>
+                      A strong option for women who want facts and clarity. It
+                      challenges common myths and supports informed, thoughtful
+                      conversations about women’s health.
+                    </p>
+                  </div>
+                </article>
+
+                <!-- Book 4 -->
+                <article
+                  class="flex flex-col gap-4 rounded-3xl border border-sand-100 bg-white/80 p-5 shadow-soft sm:flex-row sm:items-start sm:p-6"
+                >
+                  <div
+                    class="flex w-20 flex-shrink-0 items-start justify-center overflow-hidden rounded-2xl border border-sand-100 bg-blush-50/80 shadow-sm sm:w-24"
+                  >
+                    <img
+                      src="https://www.hachettebookgroup.com/wp-content/uploads/2024/09/9780316481182_cdb92b.jpg"
+                      alt="Cover of Estrogen Matters"
+                      class="h-auto w-full object-contain"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="space-y-2 text-sm text-slate-700">
+                    <h2 class="text-base font-semibold text-slate-900">
+                      Estrogen Matters
+                    </h2>
+                    <p class="text-xs font-medium text-slate-500">
+                      Avrum Bluming, MD, oncologist and Carol Tavris, PhD,
+                      social psychologist
+                    </p>
+                    <p>
+                      I suggest this for women who feel confused or uncertain
+                      about hormone conversations. It offers helpful historical
+                      and medical context without oversimplifying the topic.
+                    </p>
+                  </div>
+                </article>
+
+                <!-- Book 5 -->
+                <article
+                  class="flex flex-col gap-4 rounded-3xl border border-sand-100 bg-white/80 p-5 shadow-soft sm:flex-row sm:items-start sm:p-6"
+                >
+                  <div
+                    class="flex w-20 flex-shrink-0 items-start justify-center overflow-hidden rounded-2xl border border-sand-100 bg-blush-50/80 shadow-sm sm:w-24"
+                  >
+                    <img
+                      src="https://m.media-amazon.com/images/I/71TgqcQugZL._UF1000,1000_QL80_.jpg"
+                      alt="Cover of The Menopause Brain"
+                      class="h-auto w-full object-contain"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="space-y-2 text-sm text-slate-700">
+                    <h2 class="text-base font-semibold text-slate-900">
+                      The Menopause Brain
+                    </h2>
+                    <p class="text-xs font-medium text-slate-500">
+                      Lisa Mosconi, PhD, neuroscientist
+                    </p>
+                    <p>
+                      This book is especially helpful for women noticing changes
+                      in memory, mood, or focus. I like how it connects brain
+                      health with everyday habits during midlife.
+                    </p>
+                  </div>
+                </article>
+
+                <!-- Book 6 -->
+                <article
+                  class="flex flex-col gap-4 rounded-3xl border border-sand-100 bg-white/80 p-5 shadow-soft sm:flex-row sm:items-start sm:p-6"
+                >
+                  <div
+                    class="flex w-20 flex-shrink-0 items-start justify-center overflow-hidden rounded-2xl border border-sand-100 bg-blush-50/80 shadow-sm sm:w-24"
+                  >
+                    <img
+                      src="https://m.media-amazon.com/images/I/71bL6An5-1L._SY466_.jpg"
+                      alt="Cover of Burnout"
+                      class="h-auto w-full object-contain"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="space-y-2 text-sm text-slate-700">
+                    <h2 class="text-base font-semibold text-slate-900">
+                      Burnout
+                    </h2>
+                    <p class="text-xs font-medium text-slate-500">
+                      Emily Nagoski, PhD, health educator and researcher
+                    </p>
+                    <p>
+                      This is a powerful read for women feeling overwhelmed or
+                      depleted. It offers insight into stress, emotional health,
+                      and nervous system care in a very relatable way.
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========== WEBSITES SECTION ========== -->
+        <section class="fade-section border-y border-blush-100 bg-sand-50/70">
+          <div class="mx-auto max-w-6xl px-4 py-12 sm:py-16">
+            <div
+              class="mb-8 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-end"
+            >
+              <div>
+                <p
+                  class="text-xs font-semibold uppercase tracking-[0.25em] text-sky-600"
+                >
+                  Websites Erin Recommends
+                </p>
+              </div>
+            </div>
+
+            <div class="grid gap-6 md:grid-cols-2">
+              <!-- Website 1 -->
+              <article
+                class="flex flex-col justify-between rounded-3xl bg-white/80 p-6 shadow-soft"
+              >
+                <div class="space-y-2 text-sm text-slate-700">
+                  <h2 class="text-base font-semibold text-slate-900">
+                    <a
+                      href="https://menopause.org/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="inline-flex items-center gap-1"
+                    >
+                      The Menopause Society
+                      <span
+                        aria-hidden="true"
+                        class="text-sky-500"
+                      >
+                        ↗
+                      </span>
+                    </a>
+                  </h2>
+                  <p class="text-xs font-medium text-slate-500">
+                    Purpose: menopause education and standards of care
+                  </p>
+                  <p>
+                    A trusted medical organization offering clear, evidence-based
+                    information on menopause and midlife health. I recommend this
+                    site for women who want reliable education without trends,
+                    fear, or overwhelm.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Website 2 -->
+              <article
+                class="flex flex-col justify-between rounded-3xl bg-white/80 p-6 shadow-soft"
+              >
+                <div class="space-y-2 text-sm text-slate-700">
+                  <h2 class="text-base font-semibold text-slate-900">
+                    <a
+                      href="https://www.health.harvard.edu/topics/womens-health"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="inline-flex items-center gap-1"
+                    >
+                      Harvard Health Publishing
+                      <span
+                        aria-hidden="true"
+                        class="text-sky-500"
+                      >
+                        ↗
+                      </span>
+                    </a>
+                  </h2>
+                  <p class="text-xs font-medium text-slate-500">
+                    Purpose: research-based lifestyle and health education
+                  </p>
+                  <p>
+                    This site provides thoughtful articles on hormones, aging,
+                    nutrition, sleep, and stress. It’s a helpful resource for
+                    women who want deeper understanding grounded in medical
+                    research.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Website 3 -->
+              <article
+                class="flex flex-col justify-between rounded-3xl bg-white/80 p-6 shadow-soft"
+              >
+                <div class="space-y-2 text-sm text-slate-700">
+                  <h2 class="text-base font-semibold text-slate-900">
+                    <a
+                      href="https://www.nia.nih.gov/news/topics/womens-health"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="inline-flex items-center gap-1"
+                    >
+                      National Institute on Aging
+                      <span
+                        aria-hidden="true"
+                        class="text-sky-500"
+                      >
+                        ↗
+                      </span>
+                    </a>
+                  </h2>
+                  <p class="text-xs font-medium text-slate-500">
+                    Purpose: aging and long-term health context
+                  </p>
+                  <p>
+                    A government-backed resource focused on aging, midlife
+                    transitions, and preventive health. I like this site for
+                    understanding how menopause fits into overall health across
+                    the lifespan.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Website 4 -->
+              <article
+                class="flex flex-col justify-between rounded-3xl bg-white/80 p-6 shadow-soft"
+              >
+                <div class="space-y-2 text-sm text-slate-700">
+                  <h2 class="text-base font-semibold text-slate-900">
+                    <a
+                      href="https://womenshealth.gov/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="inline-flex items-center gap-1"
+                    >
+                      Office on Women’s Health
+                      <span
+                        aria-hidden="true"
+                        class="text-sky-500"
+                      >
+                        ↗
+                      </span>
+                    </a>
+                  </h2>
+                  <p class="text-xs font-medium text-slate-500">
+                    Purpose: women’s health basics and preventive care
+                  </p>
+                  <p>
+                    This U.S. Department of Health resource offers clear
+                    information on women’s health topics, including menopause,
+                    mental health, and wellness. It’s a solid reference for
+                    evidence-based guidance.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========== PODCASTS SECTION ========== -->
+        <section class="fade-section bg-white px-4 py-12 sm:py-16">
+          <div class="mx-auto max-w-5xl space-y-8">
+            <div class="flex flex-col gap-3">
+              <p
+                class="text-xs font-semibold uppercase tracking-[0.25em] text-sky-600"
+              >
+                Podcasts Erin Recommends
+              </p>
+            </div>
+
+            <div class="space-y-5">
+              <!-- Podcast 1 -->
+              <article
+                class="rounded-3xl border border-sand-100 bg-sand-50/70 p-5 shadow-soft sm:p-6"
+              >
+                <div class="space-y-2 text-sm text-slate-700">
+                  <h2 class="text-base font-semibold text-slate-900">
+                    The Dr. Louise Newson Podcast
+                  </h2>
+                  <p class="text-xs font-medium text-slate-500">
+                    Purpose: evidence-based menopause education
+                  </p>
+                  <p>
+                    This podcast offers thoughtful conversations about menopause,
+                    hormones, and midlife health. It’s a good listen for women
+                    who want science-informed perspectives without sensationalism.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Podcast 2 -->
+              <article
+                class="rounded-3xl border border-sand-100 bg-white/80 p-5 shadow-soft sm:p-6"
+              >
+                <div class="space-y-2 text-sm text-slate-700">
+                  <h2 class="text-base font-semibold text-slate-900">
+                    The Midlife Feast
+                  </h2>
+                  <p class="text-xs font-medium text-slate-500">
+                    Purpose: lived experience and normalization
+                  </p>
+                  <p>
+                    A warm, honest podcast about midlife transitions, identity,
+                    health, and self-trust. I like it for helping women feel seen
+                    and less alone in this season.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Podcast 3 -->
+              <article
+                class="rounded-3xl border border-sand-100 bg-white/80 p-5 shadow-soft sm:p-6"
+              >
+                <div class="space-y-2 text-sm text-slate-700">
+                  <h2 class="text-base font-semibold text-slate-900">
+                    On Health with Shannon Miller
+                  </h2>
+                  <p class="text-xs font-medium text-slate-500">
+                    Purpose: whole-body wellness and resilience
+                  </p>
+                  <p>
+                    This podcast explores physical and emotional health through
+                    expert interviews and personal stories. It supports a balanced
+                    view of strength, recovery, and wellbeing in midlife.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========== APPS SECTION ========== -->
+        <section class="fade-section border-t border-blush-100 bg-sand-50/60">
+          <div class="mx-auto max-w-6xl px-4 py-12 sm:py-16">
+            <div class="mx-auto max-w-3xl space-y-3 text-center">
+              <p
+                class="text-xs font-semibold uppercase tracking-[0.25em] text-sky-600"
+              >
+                Mobile Apps Erin Recommends
+              </p>
+            </div>
+
+            <div
+              class="mt-8 grid gap-6 md:grid-cols-3 md:gap-7 lg:gap-8"
+            >
+              <!-- App 1 -->
+              <article
+                class="flex flex-col justify-between rounded-3xl border border-sand-100 bg-white/80 p-5 text-sm text-slate-700 shadow-soft"
+              >
+                <div class="space-y-3">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="flex h-10 w-10 items-center justify-center overflow-hidden rounded-2xl border border-sand-100 bg-sand-50"
+                    >
+                      <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScvMlFJfa05Ph7nQoggtjRf5IP7ersuYQEZQ&s"
+                        alt="Balance App logo"
+                        class="h-full w-full object-contain"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h2 class="text-base font-semibold text-slate-900">
+                      Balance App
+                    </h2>
+                  </div>
+                  <div class="space-y-2">
+                    <p class="text-xs font-medium text-slate-500">
+                      Purpose: symptom tracking and education
+                    </p>
+                    <p>
+                      A simple app that helps women track symptoms and patterns
+                      while offering educational content about menopause. Useful for
+                      building awareness and preparing for care conversations.
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- App 2 -->
+              <article
+                class="flex flex-col justify-between rounded-3xl border border-sand-100 bg-white/80 p-5 text-sm text-slate-700 shadow-soft"
+              >
+                <div class="space-y-3">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="flex h-10 w-10 items-center justify-center overflow-hidden rounded-2xl border border-sand-100 bg-sand-50"
+                    >
+                      <img
+                        src="https://play-lh.googleusercontent.com/5nhGeNbFEhYY63llcC_sgnXkgwnWRqQ6tshDg8ySTf-vHWK-DPGMqwGrnR9ca670eSYb"
+                        alt="Insight Timer logo"
+                        class="h-full w-full object-contain"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h2 class="text-base font-semibold text-slate-900">
+                      Insight Timer
+                    </h2>
+                  </div>
+                  <div class="space-y-2">
+                    <p class="text-xs font-medium text-slate-500">
+                      Purpose: stress and nervous system support
+                    </p>
+                    <p>
+                      This app offers guided meditations, breathwork, and sleep
+                      support. Many women find it helpful for managing stress,
+                      anxiety, and rest during midlife.
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- App 3 -->
+              <article
+                class="flex flex-col justify-between rounded-3xl border border-sand-100 bg-white/80 p-5 text-sm text-slate-700 shadow-soft"
+              >
+                <div class="space-y-3">
+                  <div class="flex items-center gap-3">
+                    <div
+                      class="flex h-10 w-10 items-center justify-center overflow-hidden rounded-2xl border border-sand-100 bg-sand-50"
+                    >
+                      <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKugGZ_1ykaRh8VoiLIHIdS7Eo8pf-j5-39g&s"
+                        alt="MyFitnessPal logo"
+                        class="h-full w-full object-contain"
+                        loading="lazy"
+                      />
+                    </div>
+                    <h2 class="text-base font-semibold text-slate-900">
+                      MyFitnessPal
+                    </h2>
+                  </div>
+                  <div class="space-y-2">
+                    <p class="text-xs font-medium text-slate-500">
+                      Purpose: general nutrition awareness
+                    </p>
+                    <p>
+                      A neutral tool for tracking food and habits without
+                      prescribing a specific diet. I suggest it only as a way to
+                      notice patterns, not to create restriction or pressure.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- ===================== FOOTER ===================== -->
+      <footer class="border-t border-blush-100 bg-sky-50/70">
+        <div class="mx-auto max-w-6xl px-4 py-6 text-xs text-slate-500">
+          <div
+            class="flex flex-col items-center justify-between gap-3 sm:flex-row"
+          >
+            <p class="text-center sm:text-left">
+              © <span id="year"></span> Erin Free Menopause Coaching, Napa
+              Valley. All rights reserved.
+            </p>
+            <div
+              class="flex flex-wrap items-center justify-center gap-4 sm:justify-end"
+            >
+              <a href="#" class="hover:text-sky-600">
+                Privacy Policy
+              </a>
+              <a href="mailto:hello@example.com" class="hover:text-sky-600">
+                hello@example.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
+

@@ -24,10 +24,10 @@
           extend: {
             colors: {
               blush: {
-                50: '#fdf5f7',
-                100: '#fbe8ec',
-                200: '#f7ccd7',
-                300: '#f1a5b8',
+                50: '#f4f7fd',
+                100: '#e3eefc',
+                200: '#c3dcf8',
+                300: '#8bb7f0',
               },
               sand: {
                 50: '#f6f4f1',
@@ -66,7 +66,7 @@
         <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:py-5">
           <div class="flex items-center gap-3">
             <div
-              class="flex h-10 w-10 items-center justify-center rounded-full bg-blush-100 text-sm font-semibold text-rose-600"
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-blush-100 text-sm font-semibold text-sky-700"
             >
               EF
             </div>
@@ -82,7 +82,7 @@
 
           <a
             href="index.html#contact"
-            class="hidden rounded-full bg-rose-500 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-white shadow-md shadow-rose-200/70 transition hover:bg-rose-600 hover:shadow-lg sm:inline-block"
+            class="hidden rounded-full bg-sky-600 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-white shadow-md transition hover:bg-sky-700 hover:shadow-lg sm:inline-block"
           >
             Free Consultation
           </a>
@@ -92,23 +92,26 @@
           <div class="mx-auto flex max-w-6xl items-center justify-between px-4">
             <div class="flex w-full items-center justify-between gap-2 py-3 text-xs sm:text-sm">
               <div class="flex flex-wrap items-center gap-4 sm:gap-6">
-                <a href="index.html#home" class="nav-link text-slate-600 hover:text-rose-600">
+                <a href="index.html#home" class="nav-link text-slate-600 hover:text-sky-600">
                   Home
                 </a>
-                <a href="index.html#services" class="nav-link text-slate-600 hover:text-rose-600">
+                <a href="index.html#services" class="nav-link text-slate-600 hover:text-sky-600">
                   Services
                 </a>
-                <a href="index.html#blog" class="nav-link text-slate-600 hover:text-rose-600">
+                <a href="about.html" class="nav-link font-medium text-sky-700">
+                  About
+                </a>
+                <a href="index.html#blog" class="nav-link text-slate-600 hover:text-sky-600">
                   Blog
                 </a>
-                <a href="about.html" class="nav-link font-medium text-rose-600">
-                  About
+                <a href="resources.html" class="nav-link text-slate-600 hover:text-sky-600">
+                  Resources
                 </a>
               </div>
               <div class="flex items-center gap-4">
                 <a
                   href="index.html#login"
-                  class="nav-link text-slate-500 hover:text-rose-600"
+                  class="nav-link text-slate-500 hover:text-sky-600"
                 >
                   Login
                 </a>
@@ -145,13 +148,13 @@
                 class="relative mx-auto max-w-md rounded-3xl bg-sand-50 p-5 shadow-soft sm:p-6"
               >
                 <div
-                  class="absolute -left-4 -top-4 h-16 w-16 rounded-3xl border border-dashed border-rose-200"
+                  class="absolute -left-4 -top-4 h-16 w-16 rounded-3xl border border-dashed border-sky-200"
                 ></div>
                 <div
-                  class="absolute -right-4 -bottom-4 h-20 w-20 rounded-full bg-rose-100/60"
+                  class="absolute -right-4 -bottom-4 h-20 w-20 rounded-full bg-sky-100/60"
                 ></div>
                 <div
-                  class="relative rounded-2xl border border-sand-100 bg-gradient-to-br from-white via-blush-50 to-rose-50/80"
+                  class="relative rounded-2xl border border-sand-100 bg-gradient-to-br from-white via-blush-50 to-sky-50/80"
                 >
                   <img
                     src="assets/images/nurtition.jpg"
@@ -176,13 +179,13 @@
                 class="relative mx-auto max-w-md rounded-3xl bg-sand-50 p-5 shadow-soft sm:p-6"
               >
                 <div
-                  class="absolute -left-4 -top-4 h-12 w-12 rounded-3xl border border-dashed border-rose-200 sm:h-16 sm:w-16"
+                  class="absolute -left-4 -top-4 h-12 w-12 rounded-3xl border border-dashed border-sky-200 sm:h-16 sm:w-16"
                 ></div>
                 <div
-                  class="absolute -right-4 -bottom-4 h-16 w-16 rounded-full bg-rose-100/70"
+                  class="absolute -right-4 -bottom-4 h-16 w-16 rounded-full bg-sky-100/70"
                 ></div>
                 <div
-                  class="relative flex h-full min-h-[220px] items-center justify-center rounded-2xl border border-sand-100 bg-gradient-to-br from-white via-blush-50 to-rose-50/80"
+                  class="relative flex h-full min-h-[220px] items-center justify-center rounded-2xl border border-sand-100 bg-gradient-to-br from-white via-blush-50 to-sky-50/80"
                 >
                   <div class="px-4 text-center">
                     <p class="text-xs font-semibold tracking-wide text-slate-500">
@@ -199,7 +202,7 @@
             <!-- Text -->
             <div class="md:flex-1">
               <p
-                class="text-xs font-semibold uppercase tracking-[0.25em] text-rose-500"
+                class="text-xs font-semibold uppercase tracking-[0.25em] text-sky-600"
               >
                 Why This Work Matters
               </p>
@@ -242,17 +245,27 @@
                 </div>
               </div>
 
-              <!-- Image larger but still beside text on desktop -->
+              <!-- Image with decorative frame (matches About Erin hero treatment) -->
               <div class="self-start">
-                <div
-                  class="relative mx-auto max-w-xl overflow-hidden rounded-3xl bg-sand-50 shadow-soft md:ml-auto"
+              <div
+                class="relative mx-auto max-w-xl rounded-3xl bg-sand-50 p-5 shadow-soft md:ml-auto sm:p-6"
                 >
-                  <img
-                    src="assets/images/prezi.jpg"
-                    alt="Calm, grounded moment from Erin’s coaching practice"
-                    loading="lazy"
-                    class="w-full rounded-3xl object-contain"
-                  />
+                  <div
+                    class="absolute -left-4 -top-4 h-16 w-16 rounded-3xl border border-dashed border-sky-200"
+                  ></div>
+                  <div
+                    class="absolute -right-4 -bottom-4 h-20 w-20 rounded-full bg-sky-100/60"
+                  ></div>
+                  <div
+                    class="relative rounded-2xl border border-sand-100 bg-gradient-to-br from-white via-blush-50 to-sky-50/80"
+                  >
+                    <img
+                      src="assets/images/prezi.jpg"
+                      alt="Calm, grounded moment from Erin’s coaching practice"
+                      loading="lazy"
+                      class="w-full rounded-2xl object-contain"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -261,11 +274,11 @@
 
         <!-- Full-width pull quote -->
         <section
-          class="fade-section bg-gradient-to-r from-rose-50 via-blush-100/70 to-rose-50 px-6 py-16"
+          class="fade-section bg-gradient-to-r from-sky-50 via-blush-100/70 to-sky-50 px-6 py-16"
         >
           <div class="mx-auto max-w-3xl">
             <blockquote
-              class="my-4 border-l-4 border-rose-300 pl-4 text-lg italic text-slate-600"
+              class="my-4 border-l-4 border-sky-300 pl-4 text-lg italic text-slate-600"
             >
               "This is not just a career. It’s a calling."
             </blockquote>
@@ -276,7 +289,7 @@
         <section class="fade-section bg-white px-6 py-16">
           <div class="mx-auto max-w-5xl">
             <div
-              class="mb-3 text-center text-xs font-semibold uppercase tracking-[0.25em] text-rose-500"
+              class="mb-3 text-center text-xs font-semibold uppercase tracking-[0.25em] text-sky-600"
             >
               Guiding Beliefs
             </div>
@@ -285,7 +298,7 @@
             </h2>
             <div class="grid gap-6 text-sm text-slate-700 md:grid-cols-2">
               <div
-                class="group rounded-2xl border border-rose-100 bg-white/80 p-5 shadow-sm transition hover:-translate-y-1 hover:border-rose-200 hover:shadow-soft"
+                class="group rounded-2xl border border-sky-100 bg-white/80 p-5 shadow-sm transition hover:-translate-y-1 hover:border-sky-200 hover:shadow-soft"
               >
                 <h3 class="font-semibold text-slate-900">
                   Care should feel personal
@@ -295,7 +308,7 @@
                 </p>
               </div>
               <div
-                class="group rounded-2xl border border-rose-100 bg-white/80 p-5 shadow-sm transition hover:-translate-y-1 hover:border-rose-200 hover:shadow-soft"
+                class="group rounded-2xl border border-sky-100 bg-white/80 p-5 shadow-sm transition hover:-translate-y-1 hover:border-sky-200 hover:shadow-soft"
               >
                 <h3 class="font-semibold text-slate-900">
                   Information builds confidence
@@ -305,7 +318,7 @@
                 </p>
               </div>
               <div
-                class="group rounded-2xl border border-rose-100 bg-white/80 p-5 shadow-sm transition hover:-translate-y-1 hover:border-rose-200 hover:shadow-soft"
+                class="group rounded-2xl border border-sky-100 bg-white/80 p-5 shadow-sm transition hover:-translate-y-1 hover:border-sky-200 hover:shadow-soft"
               >
                 <h3 class="font-semibold text-slate-900">
                   Consistency is better than intensity
@@ -315,7 +328,7 @@
                 </p>
               </div>
               <div
-                class="group rounded-2xl border border-rose-100 bg-white/80 p-5 shadow-sm transition hover:-translate-y-1 hover:border-rose-200 hover:shadow-soft"
+                class="group rounded-2xl border border-sky-100 bg-white/80 p-5 shadow-sm transition hover:-translate-y-1 hover:border-sky-200 hover:shadow-soft"
               >
                 <h3 class="font-semibold text-slate-900">
                   Your voice matters
@@ -332,7 +345,7 @@
         <section class="fade-section bg-white px-6 py-16">
           <div class="mx-auto max-w-4xl text-center">
             <p
-              class="text-xs font-semibold uppercase tracking-[0.25em] text-rose-500"
+              class="text-xs font-semibold uppercase tracking-[0.25em] text-sky-600"
             >
               Experience &amp; Training
             </p>
@@ -376,7 +389,7 @@
 
               <div class="space-y-4 text-base text-slate-700">
                 <p
-                  class="text-xs font-semibold uppercase tracking-[0.25em] text-rose-500"
+                  class="text-xs font-semibold uppercase tracking-[0.25em] text-sky-600"
                 >
                   A Personal Note
                 </p>
@@ -397,7 +410,7 @@
       </main>
 
       <!-- Shared footer -->
-      <footer class="border-t border-blush-100 bg-rose-50/70">
+      <footer class="border-t border-blush-100 bg-sky-50/70">
         <div class="mx-auto max-w-6xl px-4 py-6 text-xs text-slate-500">
           <div class="flex flex-col items-center justify-between gap-3 sm:flex-row">
             <p class="text-center sm:text-left">
@@ -405,10 +418,10 @@
               reserved.
             </p>
             <div class="flex flex-wrap items-center justify-center gap-4 sm:justify-end">
-              <a href="#" class="hover:text-rose-600">
+              <a href="#" class="hover:text-sky-600">
                 Privacy Policy
               </a>
-              <a href="mailto:hello@example.com" class="hover:text-rose-600">
+              <a href="mailto:hello@example.com" class="hover:text-sky-600">
                 hello@example.com
               </a>
             </div>
