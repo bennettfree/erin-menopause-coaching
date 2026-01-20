@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intake | Erin Free Menopause Coaching</title>
+    <meta
+      name="description"
+      content="Guided intake onboarding for Erin Free Menopause Coaching to help prepare for your consultation."
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="assets/images/favicon.svg"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              blush: {
+                50: '#f4f7fd',
+                100: '#e3eefc',
+                200: '#c3dcf8',
+                300: '#8bb7f0',
+              },
+              sand: {
+                50: '#f6f4f1',
+                100: '#e7e0d6',
+              },
+            },
+            fontFamily: {
+              sans: ['system-ui', 'ui-sans-serif', 'sans-serif'],
+            },
+            boxShadow: {
+              soft: '0 18px 45px rgba(15, 23, 42, 0.12)',
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .fade-section {
+        opacity: 0;
+        transform: translateY(24px);
+        transition: opacity 400ms ease-out, transform 400ms ease-out;
+      }
+      .fade-section.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-blush-50 text-slate-900 font-sans">
+    <div class="flex min-h-screen flex-col">
+      <!-- ===================== SHARED HEADER ===================== -->
+      <header class="border-b border-blush-200 bg-white/70 backdrop-blur">
+        <div
+          class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:py-5"
+        >
+          <div class="flex items-center gap-3">
+            <div
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-blush-100 text-sm font-semibold text-sky-700"
+            >
+              EF
+            </div>
+            <div>
+              <p class="text-sm font-semibold tracking-wide text-slate-900">
+                Erin Free Coaching
+              </p>
+              <p class="text-xs text-slate-500">
+                Menopause Wellness • Napa Valley
+              </p>
+            </div>
+          </div>
+
+          <a
+            href="index.html#contact"
+            class="hidden rounded-full bg-sky-600 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-white shadow-md transition hover:bg-sky-700 hover:shadow-lg sm:inline-block"
+          >
+            Free Consultation
+          </a>
+        </div>
+
+        <nav class="border-t border-blush-100 bg-white/80">
+          <div class="mx-auto flex max-w-6xl items-center justify-between px-4">
+            <div
+              class="flex w-full items-center justify-between gap-2 py-3 text-xs sm:text-sm"
+            >
+              <div class="flex flex-wrap items-center gap-4 sm:gap-6">
+                <a
+                  href="index.html#home"
+                  class="nav-link text-slate-600 hover:text-sky-600"
+                >
+                  Home
+                </a>
+                <a
+                  href="index.html#services"
+                  class="nav-link text-slate-600 hover:text-sky-600"
+                >
+                  Services
+                </a>
+                <a
+                  href="about.html"
+                  class="nav-link text-slate-600 hover:text-sky-600"
+                >
+                  About
+                </a>
+                <a
+                  href="index.html#blog"
+                  class="nav-link text-slate-600 hover:text-sky-600"
+                >
+                  Blog
+                </a>
+                <a
+                  href="resources.html"
+                  class="nav-link text-slate-600 hover:text-sky-600"
+                >
+                  Resources
+                </a>
+              </div>
+              <div class="flex items-center gap-4">
+                <a
+                  href="index.html#login"
+                  class="nav-link text-slate-500 hover:text-sky-600"
+                >
+                  Login
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- ===================== INTAKE FLOW ===================== -->
+      <main class="flex-1">
+        <section
+          class="fade-section bg-gradient-to-b from-blush-100/80 via-blush-50 to-white"
+        >
+          <div
+            class="mx-auto flex min-h-[calc(100vh-5rem)] max-w-4xl flex-col px-4 py-10 sm:py-14"
+          >
+            <div
+              class="mx-auto flex w-full flex-1 items-center justify-center"
+            >
+              <div
+                class="w-full max-w-2xl rounded-3xl border border-sand-100 bg-white/80 p-6 shadow-soft sm:p-8"
+              >
+                <!-- Progress -->
+                <div class="mb-6 space-y-2">
+                  <div class="flex items-center justify-between text-xs">
+                    <p
+                      class="font-semibold uppercase tracking-[0.22em] text-sky-600"
+                    >
+                      Intake
+                    </p>
+                    <p class="text-slate-500">
+                      <span id="intake-step-label">Step 1 of 7</span>
+                    </p>
+                  </div>
+                  <div
+                    class="h-1.5 w-full overflow-hidden rounded-full bg-sand-50"
+                  >
+                    <div
+                      id="intake-progress-bar"
+                      class="h-full rounded-full bg-sky-400 transition-all duration-300 ease-out"
+                      style="width: 14.28%"
+                    ></div>
+                  </div>
+                </div>
+
+                <!-- Steps -->
+                <div id="intake-steps" class="space-y-6">
+                  <!-- STEP 1: A few basics -->
+                  <div data-step="1" class="space-y-5">
+                    <div class="space-y-1">
+                      <p
+                        class="text-xs font-semibold uppercase tracking-[0.25em] text-sky-600"
+                      >
+                        A few basics
+                      </p>
+                    </div>
+
+                    <div class="space-y-4">
+                      <div class="grid gap-4 sm:grid-cols-2">
+                        <div>
+                          <label
+                            class="block text-xs font-semibold uppercase tracking-wide text-slate-600"
+                          >
+                            Full name
+                          </label>
+                          <input
+                            id="intake-full-name"
+                            type="text"
+                            class="mt-1 w-full rounded-full border border-sand-100 bg-sand-50/60 px-4 py-2 text-sm text-slate-800 outline-none ring-sky-200/0 transition placeholder:text-slate-400 focus:border-sky-300 focus:ring-2 focus:ring-sky-200"
+                            placeholder="Full name"
+                          />
+                        </div>
+                        <div>
+                          <label
+                            class="block text-xs font-semibold uppercase tracking-wide text-slate-600"
+                          >
+                            Email address
+                          </label>
+                          <input
+                            id="intake-email"
+                            type="email"
+                            class="mt-1 w-full rounded-full border border-sand-100 bg-sand-50/60 px-4 py-2 text-sm text-slate-800 outline-none ring-sky-200/0 transition placeholder:text-slate-400 focus:border-sky-300 focus:ring-2 focus:ring-sky-200"
+                            placeholder="Email address"
+                          />
+                        </div>
+                      </div>
+                      <div class="space-y-2">
+                        <p class="text-sm font-medium text-slate-900">
+                          Age range
+                        </p>
+                        <div
+                          class="flex flex-wrap gap-2"
+                          data-choice-group="age-range"
+                          data-choice-type="single"
+                        >
+                          <button
+                            type="button"
+                            class="choice-pill"
+                          >
+                            35–44
+                          </button>
+                          <button
+                            type="button"
+                            class="choice-pill"
+                          >
+                            45–54
+                          </button>
+                          <button
+                            type="button"
+                            class="choice-pill"
+                          >
+                            55–64
+                          </button>
+                          <button
+                            type="button"
+                            class="choice-pill"
+                          >
+                            65+
+                          </button>
+                        </div>
+                      </div>
+                      <div class="grid gap-4 sm:grid-cols-2">
+                        <div>
+                          <label
+                            class="block text-xs font-semibold uppercase tracking-wide text-slate-600"
+                          >
+                            City
+                          </label>
+                          <input
+                            id="intake-city"
+                            type="text"
+                            class="mt-1 w-full rounded-full border border-sand-100 bg-sand-50/60 px-4 py-2 text-sm text-slate-800 outline-none ring-sky-200/0 transition placeholder:text-slate-400 focus:border-sky-300 focus:ring-2 focus:ring-sky-200"
+                            placeholder="City"
+                          />
+                        </div>
+                        <div>
+                          <label
+                            class="block text-xs font-semibold uppercase tracking-wide text-slate-600"
+                          >
+                            State
+                          </label>
+                          <select
+                            id="intake-state"
+                            class="mt-1 w-full rounded-full border border-sand-100 bg-sand-50/60 px-4 py-2 text-sm text-slate-800 outline-none ring-sky-200/0 transition focus:border-sky-300 focus:ring-2 focus:ring-sky-200"
+                          >
+                            <option value="">Select state</option>
+                            <option>Alabama</option>
+                            <option>Alaska</option>
+                            <option>Arizona</option>
+                            <option>Arkansas</option>
+                            <option>California</option>
+                            <option>Colorado</option>
+                            <option>Connecticut</option>
+                            <option>Delaware</option>
+                            <option>Florida</option>
+                            <option>Georgia</option>
+                            <option>Hawaii</option>
+                            <option>Idaho</option>
+                            <option>Illinois</option>
+                            <option>Indiana</option>
+                            <option>Iowa</option>
+                            <option>Kansas</option>
+                            <option>Kentucky</option>
+                            <option>Louisiana</option>
+                            <option>Maine</option>
+                            <option>Maryland</option>
+                            <option>Massachusetts</option>
+                            <option>Michigan</option>
+                            <option>Minnesota</option>
+                            <option>Mississippi</option>
+                            <option>Missouri</option>
+                            <option>Montana</option>
+                            <option>Nebraska</option>
+                            <option>Nevada</option>
+                            <option>New Hampshire</option>
+                            <option>New Jersey</option>
+                            <option>New Mexico</option>
+                            <option>New York</option>
+                            <option>North Carolina</option>
+                            <option>North Dakota</option>
+                            <option>Ohio</option>
+                            <option>Oklahoma</option>
+                            <option>Oregon</option>
+                            <option>Pennsylvania</option>
+                            <option>Rhode Island</option>
+                            <option>South Carolina</option>
+                            <option>South Dakota</option>
+                            <option>Tennessee</option>
+                            <option>Texas</option>
+                            <option>Utah</option>
+                            <option>Vermont</option>
+                            <option>Virginia</option>
+                            <option>Washington</option>
+                            <option>West Virginia</option>
+                            <option>Wisconsin</option>
+                            <option>Wyoming</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- STEP 2: Why you're here -->
+                  <div data-step="2" class="hidden space-y-5">
+                    <div class="space-y-1">
+                      <p
+                        class="text-xs font-semibold uppercase tracking-[0.25em] text-sky-600"
+                      >
+                        Why you’re here
+                      </p>
+                    </div>
+
+                    <div class="space-y-4">
+                      <div class="space-y-2">
+                        <p class="text-sm font-medium text-slate-900">
+                          Which best describes where you are?
+                        </p>
+                        <div
+                          class="flex flex-wrap gap-2"
+                          data-choice-group="journey-where"
+                          data-choice-type="single"
+                        >
+                          <button type="button" class="choice-pill">
+                            Perimenopause
+                          </button>
+                          <button type="button" class="choice-pill">
+                            Menopause
+                          </button>
+                          <button type="button" class="choice-pill">
+                            Post menopause
+                          </button>
+                          <button type="button" class="choice-pill">
+                            Not sure
+                          </button>
+                        </div>
+                      </div>
+
+                      <div>
+                        <label
+                          class="block text-sm font-medium text-slate-900"
+                        >
+                          What prompted you to book this consultation now?
+                        </label>
+                        <p class="text-xs text-slate-600">Short response</p>
+                        <textarea
+                          id="intake-prompt-reason"
+                          rows="3"
+                          class="mt-2 w-full rounded-2xl border border-sand-100 bg-sand-50/60 px-4 py-2 text-sm text-slate-800 outline-none ring-sky-200/0 transition placeholder:text-slate-400 focus:border-sky-300 focus:ring-2 focus:ring-sky-200"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- STEP 3: What you want support with -->
+                  <div data-step="3" class="hidden space-y-5">
+                    <div class="space-y-1">
+                      <p
+                        class="text-xs font-semibold uppercase tracking-[0.25em] text-sky-600"
+                      >
+                        What you want support with
+                      </p>
+                    </div>
+
+                    <div class="space-y-4">
+                      <div class="space-y-2">
+                        <p class="text-sm font-medium text-slate-900">
+                          Select all that apply:
+                        </p>
+                        <div
+                          class="flex flex-wrap gap-2"
+                          data-choice-group="support-areas"
+                          data-choice-type="multi"
+                        >
+                          <button type="button" class="choice-pill">
+                            Energy or fatigue
+                          </button>
+                          <button type="button" class="choice-pill">
+                            Sleep
+                          </button>
+                          <button type="button" class="choice-pill">
+                            Nutrition or digestion
+                          </button>
+                          <button type="button" class="choice-pill">
+                            Weight changes
+                          </button>
+                          <button type="button" class="choice-pill">
+                            Stress or overwhelm
+                          </button>
+                          <button type="button" class="choice-pill">
+                            Mood or emotional health
+                          </button>
+                          <button type="button" class="choice-pill">
+                            Brain fog or focus
+                          </button>
+                          <button type="button" class="choice-pill">
+                            Fitness or movement
+                          </button>
+                          <button type="button" class="choice-pill">
+                            Hormone education
+                          </button>
+                          <button type="button" class="choice-pill">
+                            Feeling unsure what’s going on
+                          </button>
+                        </div>
+                      </div>
+
+                      <div class="space-y-2">
+                        <p class="text-sm font-medium text-slate-900">
+                          Which feels most important to address first?
+                          <span class="block text-xs text-slate-500">
+                            (single choice)
+                          </span>
+                        </p>
+                        <div
+                          class="flex flex-wrap gap-2"
+                          data-choice-group="support-priority"
+                          data-choice-type="single"
+                        >
+                          <button type="button" class="choice-pill">
+                            Energy or fatigue
+                          </button>
+                          <button type="button" class="choice-pill">
+                            Sleep
+                          </button>
+                          <button type="button" class="choice-pill">
+                            Nutrition or digestion
+                          </button>
+                          <button type="button" class="choice-pill">
+                            Weight changes
+                          </button>
+                          <button type="button" class="choice-pill">
+                            Stress or overwhelm
+                          </button>
+                          <button type="button" class="choice-pill">
+                            Mood or emotional health
+                          </button>
+                          <button type="button" class="choice-pill">
+                            Brain fog or focus
+                          </button>
+                          <button type="button" class="choice-pill">
+                            Fitness or movement
+                          </button>
+                          <button type="button" class="choice-pill">
+                            Hormone education
+                          </button>
+                          <button type="button" class="choice-pill">
+                            Feeling unsure what’s going on
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- STEP 4: Fit and readiness -->
+                  <div data-step="4" class="hidden space-y-5">
+                    <div class="space-y-1">
+                      <p
+                        class="text-xs font-semibold uppercase tracking-[0.25em] text-sky-600"
+                      >
+                        Fit and readiness
+                      </p>
+                    </div>
+
+                    <div class="space-y-4">
+                      <div class="space-y-2">
+                        <p class="text-sm font-medium text-slate-900">
+                          How open are you to making gradual lifestyle changes
+                          over time?
+                        </p>
+                        <div
+                          class="flex flex-wrap gap-2"
+                          data-choice-group="openness"
+                          data-choice-type="single"
+                        >
+                          <button type="button" class="choice-pill">
+                            Very open
+                          </button>
+                          <button type="button" class="choice-pill">
+                            Somewhat open
+                          </button>
+                          <button type="button" class="choice-pill">
+                            Unsure
+                          </button>
+                          <button type="button" class="choice-pill">
+                            Not sure this is the right time
+                          </button>
+                        </div>
+                      </div>
+
+                      <div class="space-y-2">
+                        <p class="text-sm font-medium text-slate-900">
+                          If coaching feels like a good fit, are you prepared to
+                          invest time and resources into ongoing support?
+                        </p>
+                        <div
+                          class="flex flex-wrap gap-2"
+                          data-choice-group="investment-readiness"
+                          data-choice-type="single"
+                        >
+                          <button type="button" class="choice-pill">
+                            Yes
+                          </button>
+                          <button type="button" class="choice-pill">
+                            Possibly
+                          </button>
+                          <button type="button" class="choice-pill">
+                            I’m not sure yet
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- STEP 5: Completion -->
+                  <div data-step="5" class="hidden space-y-5">
+                    <div
+                      class="rounded-2xl border border-sand-100 bg-sand-50/70 p-4 text-sm text-slate-700"
+                    >
+                      <div class="flex items-center gap-3">
+                        <span
+                          class="flex h-7 w-7 items-center justify-center rounded-full bg-sky-100 text-xs font-semibold text-sky-700"
+                        >
+                          ✓
+                        </span>
+                        <div class="space-y-1">
+                          <p class="font-semibold text-slate-900">
+                            Thank you for sharing.
+                          </p>
+                          <p class="text-xs text-slate-600 sm:text-sm">
+                            This helps me come prepared so we can focus our time
+                            on what matters most to you.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Navigation -->
+                <div
+                  class="mt-8 flex items-center justify-between gap-3 border-t border-sand-100 pt-4"
+                >
+                  <button
+                    type="button"
+                    id="intake-back"
+                    class="inline-flex items-center justify-center rounded-full border border-sand-100 bg-white px-5 py-2 text-sm font-medium text-slate-700 shadow-sm transition hover:border-sky-200 hover:bg-sand-50 disabled:cursor-default disabled:opacity-40"
+                  >
+                    Back
+                  </button>
+                  <button
+                    type="button"
+                    id="intake-next"
+                    class="inline-flex items-center justify-center rounded-full bg-sky-600 px-6 py-2.5 text-sm font-semibold text-white shadow-soft transition hover:bg-sky-700 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-300"
+                  >
+                    Next
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- ===================== FOOTER ===================== -->
+      <footer class="border-t border-blush-100 bg-sky-50/70">
+        <div class="mx-auto max-w-6xl px-4 py-6 text-xs text-slate-500">
+          <div
+            class="flex flex-col items-center justify-between gap-3 sm:flex-row"
+          >
+            <p class="text-center sm:text-left">
+              © <span id="year"></span> Erin Free Menopause Coaching, Napa
+              Valley. All rights reserved.
+            </p>
+            <div
+              class="flex flex-wrap items-center justify-center gap-4 sm:justify-end"
+            >
+              <a href="#" class="hover:text-sky-600">
+                Privacy Policy
+              </a>
+              <a href="mailto:hello@example.com" class="hover:text-sky-600">
+                hello@example.com
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Shared fade-in / nav behavior -->
+    <script src="scripts/main.js"></script>
+    <!-- Supabase client -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <!-- Intake flow behavior + Supabase save -->
+    <script>
+      // Timestamp when the questionnaire view is first loaded
+      const intakeStartedAt = new Date().toISOString();
+
+      // Supabase configuration
+      // IMPORTANT: Use ONLY your anon/publishable key here, never your secret key.
+      const SUPABASE_URL = 'https://kosxvsjzagaweaioecik.supabase.co';
+      const SUPABASE_ANON_KEY =
+        'sb_publishable_jbU5hyULwSL0WLojnbEWCA_fQh84lqL';
+
+      let supabaseClient = null;
+      if (window.supabase && SUPABASE_URL && SUPABASE_ANON_KEY) {
+        supabaseClient = window.supabase.createClient(
+          SUPABASE_URL,
+          SUPABASE_ANON_KEY
+        );
+      }
+
+      // Choice pill behavior
+      const choiceGroups = document.querySelectorAll('[data-choice-group]');
+      choiceGroups.forEach((group) => {
+        const type = group.getAttribute('data-choice-type');
+        group.querySelectorAll('button').forEach((btn) => {
+          // Base (unselected) visual style
+          btn.classList.add(
+            'rounded-full',
+            'border',
+            'border-sand-100',
+            'bg-white',
+            'px-3',
+            'py-1.5',
+            'text-xs',
+            'sm:text-sm',
+            'text-slate-700',
+            'shadow-sm',
+            'transition-colors',
+            'duration-200',
+            'ease-out',
+            'hover:border-sky-200',
+            'hover:bg-sand-50'
+          );
+
+          const applyUnselected = (button) => {
+            button.classList.remove(
+              'bg-sky-600',
+              'text-white',
+              'border-sky-600',
+              'shadow-soft',
+              'hover:bg-sky-700',
+              'hover:border-sky-500'
+            );
+            button.classList.add(
+              'bg-white',
+              'text-slate-700',
+              'border-sand-100',
+              'shadow-sm',
+              'hover:bg-sand-50',
+              'hover:border-sky-200'
+            );
+          };
+
+          const applySelected = (button) => {
+            button.classList.remove(
+              'bg-white',
+              'text-slate-700',
+              'border-sand-100',
+              'shadow-sm',
+              'hover:bg-sand-50',
+              'hover:border-sky-200'
+            );
+            button.classList.add(
+              'bg-sky-600',
+              'text-white',
+              'border-sky-600',
+              'shadow-soft',
+              'hover:bg-sky-700',
+              'hover:border-sky-500'
+            );
+          };
+
+          btn.addEventListener('click', () => {
+            if (type === 'single') {
+              // Reset all buttons in this group to unselected state
+              group.querySelectorAll('button').forEach((other) => {
+                applyUnselected(other);
+              });
+
+              // Apply selected state to the clicked button
+              applySelected(btn);
+            } else {
+              // Toggle multi-select state while keeping colors clear
+              const isActive = btn.classList.contains('bg-sky-600');
+              if (isActive) {
+                applyUnselected(btn);
+              } else {
+                applySelected(btn);
+              }
+            }
+          });
+        });
+      });
+
+      // Helpers to read selected values
+      const getSingleChoice = (groupName) => {
+        const group = document.querySelector(
+          `[data-choice-group="${groupName}"]`
+        );
+        if (!group) return null;
+        const active = group.querySelector('button.bg-sky-600');
+        return active ? active.textContent.trim() : null;
+      };
+
+      const getMultiChoice = (groupName) => {
+        const group = document.querySelector(
+          `[data-choice-group="${groupName}"]`
+        );
+        if (!group) return [];
+        return Array.from(group.querySelectorAll('button.bg-sky-600')).map(
+          (btn) => btn.textContent.trim()
+        );
+      };
+
+      // Step navigation
+      const steps = Array.from(document.querySelectorAll('[data-step]'));
+      const totalSteps = steps.length;
+      let currentStep = 1;
+
+      const progressBar = document.getElementById('intake-progress-bar');
+      const stepLabel = document.getElementById('intake-step-label');
+      const backBtn = document.getElementById('intake-back');
+      const nextBtn = document.getElementById('intake-next');
+
+      function showStep(step) {
+        currentStep = Math.min(Math.max(step, 1), totalSteps);
+        steps.forEach((el) => {
+          const s = Number(el.getAttribute('data-step'));
+          el.classList.toggle('hidden', s !== currentStep);
+        });
+
+        const progress = (currentStep / totalSteps) * 100;
+        if (progressBar) {
+          progressBar.style.width = progress + '%';
+        }
+        if (stepLabel) {
+          stepLabel.textContent = `Step ${currentStep} of ${totalSteps}`;
+        }
+
+        const isFirstStep = currentStep === 1;
+        const isCompletionStep = currentStep === totalSteps;
+
+        if (backBtn) {
+          backBtn.disabled = isFirstStep;
+          backBtn.classList.toggle('hidden', isCompletionStep);
+        }
+        if (nextBtn) {
+          nextBtn.textContent = isCompletionStep ? 'Done' : 'Next';
+          nextBtn.classList.toggle('hidden', isCompletionStep);
+        }
+      }
+
+      let hasSubmitted = false;
+
+      async function submitIntake() {
+        if (hasSubmitted) return;
+        hasSubmitted = true;
+
+        if (!supabaseClient) {
+          console.warn(
+            'Supabase client is not configured. Add your URL and anon key to enable saving.'
+          );
+          return;
+        }
+
+        const fullNameInput = document.getElementById('intake-full-name');
+        const emailInput = document.getElementById('intake-email');
+        const cityInput = document.getElementById('intake-city');
+        const stateSelect = document.getElementById('intake-state');
+        const promptReason = document.getElementById('intake-prompt-reason');
+
+        const payload = {
+          full_name: fullNameInput?.value.trim() || null,
+          email: emailInput?.value.trim() || null,
+          age_range: getSingleChoice('age-range'),
+          city: cityInput?.value.trim() || null,
+          state: stateSelect?.value || null,
+          journey_where: getSingleChoice('journey-where'),
+          prompt_reason: promptReason?.value.trim() || null,
+          support_areas: getMultiChoice('support-areas'),
+          support_priority: getSingleChoice('support-priority'),
+          openness: getSingleChoice('openness'),
+          investment_readiness: getSingleChoice('investment-readiness'),
+          started_at: intakeStartedAt,
+          submitted_at: new Date().toISOString(),
+        };
+
+        try {
+          if (nextBtn) {
+            nextBtn.disabled = true;
+            nextBtn.textContent = 'Saving...';
+          }
+
+          const { error } = await supabaseClient
+            .from('intake_submissions')
+            .insert(payload);
+
+          if (error) {
+            console.error('Error saving intake submission:', error);
+          }
+        } catch (err) {
+          console.error('Unexpected error saving intake submission:', err);
+        } finally {
+          if (nextBtn) {
+            nextBtn.disabled = false;
+            nextBtn.textContent = 'Done';
+          }
+        }
+      }
+
+      if (backBtn) {
+        backBtn.addEventListener('click', () => {
+          showStep(currentStep - 1);
+        });
+      }
+
+      if (nextBtn) {
+        nextBtn.addEventListener('click', async () => {
+          // Normal step-to-step navigation
+          if (currentStep < totalSteps - 1) {
+            showStep(currentStep + 1);
+            return;
+          }
+
+          // Moving from final question step into completion step
+          if (currentStep === totalSteps - 1) {
+            await submitIntake();
+            showStep(currentStep + 1);
+            nextBtn.disabled = true;
+          }
+        });
+      }
+
+      // Initialize
+      showStep(1);
+    </script>
+  </body>
+</html>
+

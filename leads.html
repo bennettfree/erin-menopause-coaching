@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intake Leads | Erin Free Coaching</title>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="assets/images/favicon.svg"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              blush: {
+                50: '#f4f7fd',
+                100: '#e3eefc',
+                200: '#c3dcf8',
+                300: '#8bb7f0',
+              },
+              sand: {
+                50: '#f6f4f1',
+                100: '#e7e0d6',
+              },
+            },
+            fontFamily: {
+              sans: ['system-ui', 'ui-sans-serif', 'sans-serif'],
+            },
+            boxShadow: {
+              soft: '0 18px 45px rgba(15, 23, 42, 0.12)',
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-blush-50 text-slate-900 font-sans">
+    <div class="flex min-h-screen flex-col">
+      <!-- Simple header (not in public nav) -->
+      <header class="border-b border-blush-200 bg-white/80 backdrop-blur">
+        <div
+          class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:py-5"
+        >
+          <div class="flex items-center gap-3">
+            <div
+              class="flex h-9 w-9 items-center justify-center rounded-full bg-blush-100 text-xs font-semibold text-sky-700"
+            >
+              EF
+            </div>
+            <div>
+              <p class="text-sm font-semibold tracking-wide text-slate-900">
+                Erin Free Coaching
+              </p>
+              <p class="text-xs text-slate-500">Intake Leads Overview</p>
+            </div>
+          </div>
+          <a
+            href="index.html"
+            class="rounded-full border border-sand-100 bg-white px-3 py-1.5 text-xs font-medium text-slate-600 shadow-sm transition hover:border-sky-200 hover:bg-sand-50"
+          >
+            Back to site
+          </a>
+        </div>
+      </header>
+
+      <main class="flex-1 bg-blush-50">
+        <section class="px-4 py-8 sm:py-10">
+          <div class="mx-auto max-w-6xl space-y-6">
+            <!-- Hero / summary -->
+            <div
+              class="rounded-3xl border border-blush-100 bg-white/90 p-5 shadow-soft sm:p-6"
+            >
+              <div
+                class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between"
+              >
+                <div class="space-y-2">
+                  <p
+                    class="text-xs font-semibold uppercase tracking-[0.25em] text-sky-600"
+                  >
+                    Intake Dashboard
+                  </p>
+                  <h1
+                    class="text-xl font-semibold text-slate-900 sm:text-2xl md:text-3xl"
+                  >
+                    Pre-consult questionnaire leads
+                  </h1>
+                  <p class="max-w-2xl text-sm text-slate-600">
+                    View recent intake submissions in one place. Use this table
+                    to prepare for consults, spot patterns, and organize follow
+                    up.
+                  </p>
+                </div>
+                <div
+                  class="flex flex-col items-start gap-2 text-xs text-slate-500 sm:items-end"
+                >
+                  <p id="leads-count" class="font-medium text-slate-700">
+                    —
+                  </p>
+                  <p id="leads-last-refresh">Last refreshed: —</p>
+                  <button
+                    id="leads-refresh"
+                    type="button"
+                    class="mt-1 inline-flex items-center justify-center rounded-full border border-sand-100 bg-white px-3 py-1.5 text-xs font-medium text-slate-600 shadow-sm transition hover:border-sky-200 hover:bg-sand-50"
+                  >
+                    Refresh
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Table -->
+            <div
+              class="rounded-3xl border border-blush-100 bg-white/95 p-4 shadow-sm sm:p-5"
+            >
+              <div class="mb-3 flex items-center justify-between gap-3">
+                <p class="text-xs font-semibold uppercase tracking-[0.25em] text-sky-600">
+                  Leads table
+                </p>
+                <p class="text-xs text-slate-500">
+                  Newest submissions appear first.
+                </p>
+              </div>
+              <div class="overflow-x-auto">
+                <table class="min-w-full text-left text-xs sm:text-sm">
+                  <thead class="border-b border-sand-100 bg-blush-50/80">
+                    <tr>
+                      <th class="px-3 py-2 font-semibold text-slate-700">
+                        Name
+                      </th>
+                      <th class="px-3 py-2 font-semibold text-slate-700">
+                        Email
+                      </th>
+                      <th class="px-3 py-2 font-semibold text-slate-700">
+                        Started
+                      </th>
+                      <th class="px-3 py-2 font-semibold text-slate-700">
+                        Submitted
+                      </th>
+                      <th class="px-3 py-2 font-semibold text-slate-700">
+                        Age range
+                      </th>
+                      <th class="px-3 py-2 font-semibold text-slate-700">
+                        City / State
+                      </th>
+                      <th class="px-3 py-2 font-semibold text-slate-700">
+                        Where they are
+                      </th>
+                      <th class="px-3 py-2 font-semibold text-slate-700">
+                        Top support area
+                      </th>
+                      <th class="px-3 py-2 font-semibold text-slate-700">
+                        All support areas
+                      </th>
+                      <th class="px-3 py-2 font-semibold text-slate-700">
+                        Openness
+                      </th>
+                      <th class="px-3 py-2 font-semibold text-slate-700">
+                        Investment
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody id="leads-body" class="divide-y divide-sand-50">
+                    <tr>
+                      <td
+                        colspan="11"
+                        class="px-3 py-6 text-center text-xs text-slate-500"
+                      >
+                        Loading leads…
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Simple footer -->
+      <footer class="border-t border-blush-100 bg-sky-50/70">
+        <div class="mx-auto max-w-6xl px-4 py-4 text-[11px] text-slate-500">
+          <p class="text-center sm:text-left">
+            Internal view for Erin Free Coaching — keep this page private for
+            client confidentiality.
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Supabase client -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script>
+      const SUPABASE_URL = 'https://kosxvsjzagaweaioecik.supabase.co';
+      const SUPABASE_ANON_KEY =
+        'sb_publishable_jbU5hyULwSL0WLojnbEWCA_fQh84lqL';
+
+      let supabaseClient = null;
+      if (window.supabase && SUPABASE_URL && SUPABASE_ANON_KEY) {
+        supabaseClient = window.supabase.createClient(
+          SUPABASE_URL,
+          SUPABASE_ANON_KEY
+        );
+      }
+
+      const bodyEl = document.getElementById('leads-body');
+      const countEl = document.getElementById('leads-count');
+      const lastRefreshEl = document.getElementById('leads-last-refresh');
+      const refreshBtn = document.getElementById('leads-refresh');
+
+      function formatDateTime(value) {
+        if (!value) return '—';
+        const d = new Date(value);
+        if (Number.isNaN(d.getTime())) return '—';
+        return d.toLocaleString(undefined, {
+          year: 'numeric',
+          month: 'short',
+          day: 'numeric',
+          hour: '2-digit',
+          minute: '2-digit',
+        });
+      }
+
+      function formatCityState(city, state) {
+        if (city && state) return `${city}, ${state}`;
+        if (city) return city;
+        if (state) return state;
+        return '—';
+      }
+
+      function formatArray(arr) {
+        if (!arr || !arr.length) return '—';
+        return arr.join(', ');
+      }
+
+      async function loadLeads() {
+        if (!supabaseClient) {
+          bodyEl.innerHTML =
+            '<tr><td colspan="11" class="px-3 py-6 text-center text-xs text-red-600">Supabase client is not configured.</td></tr>';
+          return;
+        }
+
+        bodyEl.innerHTML =
+          '<tr><td colspan="11" class="px-3 py-6 text-center text-xs text-slate-500">Loading leads…</td></tr>';
+
+        const { data, error } = await supabaseClient
+          .from('intake_submissions')
+          .select(
+            'id, full_name, email, age_range, city, state, journey_where, support_priority, support_areas, openness, investment_readiness, started_at, submitted_at'
+          )
+          .order('submitted_at', { ascending: false });
+
+        if (error) {
+          console.error('Error loading leads', error);
+          bodyEl.innerHTML =
+            '<tr><td colspan="11" class="px-3 py-6 text-center text-xs text-red-600">Error loading leads from Supabase. Check console for details.</td></tr>';
+          return;
+        }
+
+        if (!data || !data.length) {
+          bodyEl.innerHTML =
+            '<tr><td colspan="11" class="px-3 py-6 text-center text-xs text-slate-500">No submissions yet.</td></tr>';
+          countEl.textContent = '0 submissions';
+          lastRefreshEl.textContent = 'Last refreshed: just now';
+          return;
+        }
+
+        bodyEl.innerHTML = '';
+        data.forEach((row) => {
+          const tr = document.createElement('tr');
+          tr.className = 'align-top hover:bg-blush-50/60';
+
+          tr.innerHTML = `
+            <td class="whitespace-nowrap px-3 py-3 text-[11px] sm:text-xs text-slate-900">
+              ${row.full_name || '—'}
+            </td>
+            <td class="whitespace-nowrap px-3 py-3 text-[11px] sm:text-xs text-slate-700">
+              ${row.email || '—'}
+            </td>
+            <td class="whitespace-nowrap px-3 py-3 text-[11px] sm:text-xs text-slate-700">
+              ${formatDateTime(row.started_at)}
+            </td>
+            <td class="whitespace-nowrap px-3 py-3 text-[11px] sm:text-xs text-slate-700">
+              ${formatDateTime(row.submitted_at)}
+            </td>
+            <td class="whitespace-nowrap px-3 py-3 text-[11px] sm:text-xs text-slate-700">
+              ${row.age_range || '—'}
+            </td>
+            <td class="whitespace-nowrap px-3 py-3 text-[11px] sm:text-xs text-slate-700">
+              ${formatCityState(row.city, row.state)}
+            </td>
+            <td class="whitespace-nowrap px-3 py-3 text-[11px] sm:text-xs text-slate-700">
+              ${row.journey_where || '—'}
+            </td>
+            <td class="whitespace-nowrap px-3 py-3 text-[11px] sm:text-xs text-slate-700">
+              ${row.support_priority || '—'}
+            </td>
+            <td class="px-3 py-3 text-[11px] sm:text-xs text-slate-700">
+              ${formatArray(row.support_areas)}
+            </td>
+            <td class="whitespace-nowrap px-3 py-3 text-[11px] sm:text-xs text-slate-700">
+              ${row.openness || '—'}
+            </td>
+            <td class="whitespace-nowrap px-3 py-3 text-[11px] sm:text-xs text-slate-700">
+              ${row.investment_readiness || '—'}
+            </td>
+          `;
+
+          bodyEl.appendChild(tr);
+        });
+
+        countEl.textContent =
+          data.length === 1
+            ? '1 submission'
+            : `${data.length} submissions`;
+        lastRefreshEl.textContent = `Last refreshed: ${formatDateTime(
+          new Date().toISOString()
+        )}`;
+      }
+
+      if (refreshBtn) {
+        refreshBtn.addEventListener('click', () => {
+          loadLeads();
+        });
+      }
+
+      // Initial load
+      loadLeads();
+    </script>
+  </body>
+</html>
+
